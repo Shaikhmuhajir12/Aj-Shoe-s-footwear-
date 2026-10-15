@@ -4,244 +4,179 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#101010">
-<meta name="description" content="AJ Shoes Footwear - Explore men's, women's and children's shoes. Contact us on WhatsApp to order.">
-<title>AJ Shoes Footwear | Premium Collection</title>
-
+<title>AJ Shoes | Premium Footwear</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{--gold:#d8b46a;--black:#101010;--card:#1b1b1b;--white:#fff}
+:root{--cream:#faf5ed;--gold:#b58b50;--dark:#30241d;--white:#fffdf8}
+*{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;background:var(--black);color:var(--white);line-height:1.6}
+body{margin:0;background:var(--cream);color:var(--dark);font-family:Poppins,Arial,sans-serif}
 a{text-decoration:none;color:inherit}
-.container{width:92%;max-width:1200px;margin:auto}
-
-/* PROFESSIONAL HEADER & LOGO */
-header{background:#111;border-bottom:1px solid #393124;position:sticky;top:0;z-index:99}
-.nav{min-height:85px;display:flex;align-items:center;justify-content:space-between;gap:15px}
-.logo{display:flex;align-items:center;gap:10px}
-.logo-mark{width:55px;height:55px;border:2px solid var(--gold);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:25px;font-weight:900;letter-spacing:-2px;transform:skew(-4deg)}
-.logo-text strong{display:block;font-size:21px;letter-spacing:2px}
-.logo-text small{display:block;color:var(--gold);font-size:10px;letter-spacing:3px}
-nav{display:flex;align-items:center;gap:20px;font-size:14px}
-nav a:hover{color:var(--gold)}
-.btn{display:inline-block;background:var(--gold);color:#111;padding:12px 19px;border-radius:4px;font-weight:bold;transition:.2s;border:1px solid var(--gold);text-align:center}
-.btn:hover{background:#f0d397;transform:translateY(-2px)}
-.btn-outline{background:transparent;color:var(--gold)}
-/* HERO */
-.hero{min-height:570px;display:flex;align-items:center;background:linear-gradient(90deg,#101010 5%,#101010e8 48%,#10101035 100%),url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1800&q=85') center/cover}
-.hero-content{max-width:650px;padding:80px 0}
-.eyebrow{color:var(--gold);letter-spacing:4px;font-size:12px;font-weight:bold}
-.hero h1{font-size:clamp(40px,7vw,76px);line-height:1.05;margin:20px 0}
-.gold{color:var(--gold)}
-.hero p{color:#ddd;font-size:17px;max-width:510px;margin-bottom:28px}
-.actions{display:flex;flex-wrap:wrap;gap:12px}
-.trust{display:flex;flex-wrap:wrap;gap:20px;margin-top:28px;color:#ddd;font-size:13px}
-.trust span:before{content:"✓ ";color:var(--gold);font-weight:bold}
-/* SECTIONS */
-section{padding:75px 0}
-.section-heading{text-align:center;max-width:680px;margin:0 auto 38px}
-.section-heading h2{font-size:clamp(29px,4vw,43px);margin:8px 0}
-.section-heading p{color:#bbb}
-.categories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:23px}
-.category{background:var(--card);border:1px solid #343434;border-radius:8px;overflow:hidden;transition:.25s}
-.category:hover{transform:translateY(-6px);border-color:var(--gold)}
-.category img{width:100%;height:270px;object-fit:cover;display:block;background:#282828}
-.category-content{padding:23px}
-.category-content h3{font-size:24px;margin:6px 0}
-.category-content p{color:#bbb;font-size:14px;margin-bottom:19px}
-.category-content .btn{width:100%}
-.label{color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase}
-/* BENEFITS */
-.benefits{background:#181818;border-top:1px solid #303030;border-bottom:1px solid #303030}
-.benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.benefit{padding:25px;border:1px solid #333;border-radius:7px}
-.benefit .icon{font-size:30px;color:var(--gold)}
-.benefit h3{margin:9px 0}
-.benefit p{color:#bbb;font-size:14px}
-/* FEATURE */
-.feature{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:45px}
-.feature img{width:100%;height:390px;object-fit:cover;border-radius:8px}
-.feature h2{font-size:clamp(30px,4vw,44px);line-height:1.15;margin:13px 0}
-.feature p{color:#bbb;margin-bottom:23px}
-/* CONTACT */
-.contact-box{text-align:center;padding:55px 25px;border:1px solid #59482c;border-radius:10px;background:radial-gradient(ellipse at top,#352a19,#191919 70%)}
-.contact-box h2{font-size:clamp(30px,5vw,48px);margin:10px 0}
-.contact-box p{color:#ddd;margin-bottom:25px}
-footer{border-top:1px solid #333;padding:28px 0;color:#aaa;font-size:13px}
-.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-.whatsapp-float{position:fixed;right:17px;bottom:18px;background:#25d366;color:#071b0d;padding:13px 17px;border-radius:30px;font-weight:bold;z-index:100;box-shadow:0 4px 18px #0008}
-@media(max-width:800px){
- .nav{padding:12px 0;flex-wrap:wrap}
- nav{gap:13px;flex-wrap:wrap;font-size:12px}
- .header-order{display:none}
- .hero{min-height:520px;background-position:60% center}
- .categories{grid-template-columns:1fr;max-width:500px;margin:auto}
- .category img{height:300px}
- .benefit-grid{grid-template-columns:1fr}
- .feature{grid-template-columns:1fr;gap:25px}
- .feature img{height:290px}
- section{padding:55px 0}
-}
-@media(max-width:420px){
- .logo-mark{width:45px;height:45px;font-size:21px}
- .logo-text strong{font-size:17px}
- .logo-text small{font-size:9px;letter-spacing:2px}
- nav{width:100%;justify-content:space-between}
- .hero h1{font-size:42px}
- .hero p{font-size:15px}
+button,input,select,textarea{font:inherit}
+.top{text-align:center;background:var(--dark);color:#f5e4c8;padding:9px;font-size:10px;letter-spacing:2px}
+header{position:sticky;top:0;background:var(--white);border-bottom:1px solid #eadfce;z-index:10}
+nav{max-width:1200px;margin:auto;padding:13px 5%;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px}
+.logo{width:48px;height:48px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font:700 25px Georgia}
+.brand h2{font:700 21px Georgia;margin:0}
+.brand small{font-size:8px;letter-spacing:3px;color:var(--gold)}
+.links{display:flex;gap:15px;align-items:center;font-size:11px}
+.btn{display:inline-block;background:var(--dark);color:white;padding:12px 18px;border:0;font-size:11px;cursor:pointer}
+.btn:hover{background:var(--gold)}
+.hero{background:#eadcc8}
+.slide{display:none;max-width:1250px;margin:auto;min-height:440px;padding:50px 7%;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.slide.active{display:grid}
+.eyebrow{color:#9b743f;font-size:10px;letter-spacing:4px;margin-bottom:15px}
+h1{font:500 clamp(40px,5vw,68px)/1.1 'Playfair Display',Georgia;margin:0 0 18px}
+h1 em{color:#a57a40}
+.hero p{font-size:12px;line-height:2;color:#675746;margin-bottom:24px}
+.hero img{width:100%;height:330px;object-fit:cover;border-radius:170px 170px 5px 5px}
+.dots{text-align:center;padding:0 0 18px}
+.dots button{border:0;border-radius:10px;width:9px;height:9px;background:#c1a985;margin:0 4px;cursor:pointer}
+.dots button.active{width:26px;background:var(--dark)}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);background:white;padding:22px 4%;text-align:center}
+.benefits div{border-right:1px solid #eadfce;font-size:11px}
+.benefits div:last-child{border:0}
+.benefits span{display:block;color:#7b6b5a;font-size:10px;margin-top:5px}
+section{max-width:1300px;margin:auto;padding:65px 5%}
+.heading{text-align:center;margin-bottom:32px}
+.heading small{color:var(--gold);letter-spacing:4px;font-size:9px}
+.heading h2{font:500 clamp(30px,4vw,44px) 'Playfair Display',Georgia;margin:10px 0}
+.heading p{font-size:11px;color:#7b6b5a}
+.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cat{height:330px;position:relative;overflow:hidden;background:#e8d9c7}
+.cat img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.cat:hover img{transform:scale(1.06)}
+.cat:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#20170fce)}
+.cattext{position:absolute;z-index:1;bottom:22px;left:22px;color:white}
+.cattext h3{font:30px Georgia;margin:8px 0 12px}
+.cattext a{font-size:10px;border-bottom:1px solid white;padding-bottom:4px}
+.collection{background:#fffdf8}
+.filters{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.filter{background:transparent;border:1px solid #ddcdb7;padding:9px 16px;font-size:10px;cursor:pointer}
+.filter.active,.filter:hover{background:var(--dark);color:white}
+.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}
+.product{border:1px solid #eee2d1;background:var(--cream);min-width:0}
+.product img{display:block;width:100%;height:210px;object-fit:cover}
+.info{padding:13px}
+.info small{font-size:9px;letter-spacing:2px;color:var(--gold)}
+.info h3{font:20px Georgia;margin:8px 0}
+.info p{font-size:10px;color:#7b6b5a}
+.buy{display:flex;align-items:center;justify-content:space-between;gap:6px}
+.buy strong{font-size:12px}
+.buy button{background:var(--dark);color:white;border:0;padding:9px;font-size:9px;cursor:pointer}
+.promo{background:var(--dark);color:white;max-width:none;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center;padding:60px 8%}
+.promo h2{font:42px Georgia;margin:12px 0}
+.promo p{font-size:12px;color:#e2d3c0;line-height:2}
+.promo img{width:100%;height:290px;object-fit:cover}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.review{background:white;border:1px solid #eadfce;padding:20px}
+.stars{color:var(--gold);letter-spacing:3px}
+.review p{font-size:11px;line-height:1.9;color:#67594c}
+.formbox{max-width:650px;margin:25px auto 0;padding:23px;background:white;border:1px solid #eadfce}
+.formbox h3{font:25px Georgia}
+.field{width:100%;padding:12px;margin:7px 0 12px;border:1px solid #dfd1bd;background:#fffdf8;font-size:11px}
+textarea.field{min-height:80px}
+.formrow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{font-size:10px}
+.formbox .btn{width:100%}
+.note{font-size:10px;color:#7b6b5a;line-height:1.8}
+footer{background:#211811;color:#f7ead8;text-align:center;padding:35px 15px}
+footer h2{font:30px Georgia;color:#d5b27c}
+footer p{font-size:10px;color:#d6c4ad;line-height:2}
+.wa{position:fixed;right:15px;bottom:15px;background:#168c54;color:white;border-radius:30px;padding:13px 17px;font-size:11px;z-index:15}
+@media(max-width:750px){
+ nav{padding:10px 3%}.brand h2{font-size:17px}.logo{width:42px;height:42px}
+ .links{gap:9px;font-size:9px}.links a:nth-child(2),.links a:nth-child(4){display:none}
+ .slide{grid-template-columns:1fr;padding:32px 7% 42px;gap:20px}
+ .hero img{height:235px;max-width:390px;margin:auto}
+ .categories{grid-template-columns:1fr}.cat{height:320px}
+ .products{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .product img{height:155px}.info{padding:10px}.info h3{font-size:17px}
+ .buy{align-items:flex-start;flex-direction:column}.buy button{width:100%}
+ .promo{grid-template-columns:1fr;padding:42px 7%}.promo img{height:230px}
+ .reviews{grid-template-columns:1fr}.formrow{grid-template-columns:1fr;gap:0}
+ section{padding:45px 5%}
 }
 </style>
 </head>
-
 <body>
+<div class="top">✦ PREMIUM FOOTWEAR • STYLE • COMFORT • QUALITY ✦</div>
+<header><nav>
+<a class="brand" href="#home"><div class="logo">AJ</div><div><h2>AJ SHOES</h2><small>FOOTWEAR COLLECTION</small></div></a>
+<div class="links"><a href="#home">Home</a><a href="#categories">Categories</a><a href="#collection">Collection</a><a href="#reviews">Reviews</a><a class="btn" href="#order">ORDER NOW</a></div>
+</nav></header>
 
-<header>
- <div class="container nav">
-  <a href="#home" class="logo" aria-label="AJ Shoes home">
-   <div class="logo-mark">AJ</div>
-   <div class="logo-text">
-    <strong>AJ SHOES</strong>
-    <small>PREMIUM FOOTWEAR</small>
-   </div>
-  </a>
+<div class="hero" id="home">
+<div class="slide active"><div><div class="eyebrow">THE PREMIUM COLLECTION</div><h1>Walk With <em>Confidence.</em></h1><p>Discover your style. Step into comfort. Find your perfect pair with AJ Shoes.</p><a class="btn" href="#categories">EXPLORE COLLECTION →</a></div><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85" alt="Sports shoes"></div>
+<div class="slide"><div><div class="eyebrow">ELEGANCE IN EVERY STEP</div><h1>Style That <em>Speaks.</em></h1><p>Elegant footwear for everyday moments and special occasions.</p><a class="btn" href="#collection">SHOP THE STYLE →</a></div><img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=900&q=85" alt="Ladies footwear"></div>
+<div class="slide"><div><div class="eyebrow">LITTLE STEPS, BIG STYLE</div><h1>Made For <em>Every Step.</em></h1><p>Discover comfortable shoes for little feet and the whole family.</p><a class="btn" href="#categories">FIND YOUR PAIR →</a></div><img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=900&q=85" alt="Kids footwear"></div>
+<div class="dots"><button class="active" onclick="showSlide(0)"> </button><button onclick="showSlide(1)"> </button><button onclick="showSlide(2)"> </button></div>
+</div>
 
-  <nav>
-   <a href="#home">Home</a>
-   <a href="#collection">Collection</a>
-   <a href="#about">About Us</a>
-   <a href="#contact">Contact</a>
-  </nav>
+<div class="benefits"><div>✦ Premium Style<span>Modern designs</span></div><div>✧ Everyday Comfort<span>Made for your steps</span></div><div>◇ Easy Ordering<span>WhatsApp order support</span></div></div>
 
-  <a class="btn header-order" href="https://wa.me/923432752543?text=Assalam%20o%20Alaikum%2C%20I%20want%20to%20see%20AJ%20Shoes%20collection.">Order Now</a>
- </div>
-</header>
+<section id="categories"><div class="heading"><small>FIND YOUR PERFECT PAIR</small><h2>Shop By Category</h2><p>Styles for everyone in the family.</p></div>
+<div class="categories">
+<div class="cat"><img loading="lazy" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=85" alt="Men shoes"><div class="cattext"><small>SMART & MODERN</small><h3>Men's Shoes</h3><a href="#collection" onclick="setFilter('Men')">EXPLORE MEN →</a></div></div>
+<div class="cat"><img loading="lazy" src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=85" alt="Ladies shoes"><div class="cattext"><small>ELEGANT & CHIC</small><h3>Ladies' Shoes</h3><a href="#collection" onclick="setFilter('Ladies')">EXPLORE LADIES →</a></div></div>
+<div class="cat"><img loading="lazy" src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=700&q=85" alt="Children shoes"><div class="cattext"><small>FUN & COMFORTABLE</small><h3>Kids' Shoes</h3><a href="#collection" onclick="setFilter('Kids')">EXPLORE KIDS →</a></div></div>
+</div></section>
 
-<main id="home">
+<div class="collection" id="collection"><section>
+<div class="heading"><small>CURATED FOR YOUR STYLE</small><h2>Our Shoe Collection</h2><p>Choose your favourite and order through WhatsApp.</p></div>
+<div class="filters"><button class="filter active" onclick="setFilter('All')">All Shoes</button><button class="filter" onclick="setFilter('Men')">Men</button><button class="filter" onclick="setFilter('Ladies')">Ladies</button><button class="filter" onclick="setFilter('Kids')">Children</button></div>
+<div class="products" id="products"></div>
+<p class="note">Demo note: Prices and pictures are samples. Confirm actual product, size and price before ordering.</p>
+</section></div>
 
-<section class="hero">
- <div class="container">
-  <div class="hero-content">
-   <div class="eyebrow">WELCOME TO AJ SHOES FOOTWEAR</div>
-   <h1>WALK WITH<br><span class="gold">CONFIDENCE.</span></h1>
-   <p>Discover your perfect style with our men's, women's and children's footwear collections. Style, comfort and confidence in every step.</p>
-   <div class="actions">
-    <a href="#collection" class="btn">EXPLORE COLLECTION →</a>
-    <a href="https://wa.me/923432752543?text=Assalam%20o%20Alaikum%2C%20please%20show%20me%20your%20shoe%20collection." class="btn btn-outline">CONTACT US</a>
-   </div>
-   <div class="trust">
-    <span>Men's Footwear</span>
-    <span>Women's Footwear</span>
-    <span>Kids' Footwear</span>
-   </div>
-  </div>
- </div>
+<section class="promo"><div><div class="eyebrow">THE AJ DIFFERENCE</div><h2>Every Step.<br>Every Occasion.</h2><p>From everyday sneakers to elegant footwear, discover styles to complement your look.</p><a class="btn" href="#order">PLACE YOUR ORDER →</a></div><img loading="lazy" src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=900&q=85" alt="Premium footwear"></section>
+
+<section id="reviews"><div class="heading"><small>YOUR WORDS MATTER</small><h2>Customer Reviews</h2><p>Share your experience with AJ Shoes.</p></div>
+<div class="reviews" id="reviewlist">
+<div class="review"><div class="stars">★★★★★</div><p>Stylish designs and a beautiful collection.</p><strong>Sample Review</strong></div>
+<div class="review"><div class="stars">★★★★★</div><p>A clean, elegant collection for everyone.</p><strong>Sample Review</strong></div>
+<div class="review"><div class="stars">★★★★★</div><p>Easy to explore different footwear styles.</p><strong>Sample Review</strong></div>
+</div>
+<form class="formbox" id="reviewform"><h3>Write a Review</h3><label>Your Name</label><input class="field" id="reviewname" required placeholder="Enter your name"><label>Rating</label><select class="field" id="rating"><option value="5">★★★★★ Excellent</option><option value="4">★★★★☆ Very Good</option><option value="3">★★★☆☆ Good</option><option value="2">★★☆☆☆ Fair</option><option value="1">★☆☆☆☆ Poor</option></select><label>Your Comment</label><textarea class="field" id="reviewtext" required placeholder="Write your experience"></textarea><button class="btn" type="submit">SUBMIT REVIEW</button><p class="note">Reviews are shown on this page for the current session only.</p></form>
 </section>
 
-<section id="collection">
- <div class="container">
-  <div class="section-heading">
-   <div class="eyebrow">FIND YOUR PERFECT PAIR</div>
-   <h2>SHOP BY <span class="gold">CATEGORY</span></h2>
-   <p>Explore our featured footwear categories. Contact us to check available designs, prices and sizes.</p>
-  </div>
+<section id="order"><div class="heading"><small>QUICK & EASY ORDERING</small><h2>Cash on Delivery</h2><p>Enter your details and send your order on WhatsApp.</p></div>
+<form class="formbox" id="orderform"><h3>Order Details</h3>
+<div class="formrow"><div><label>Full Name *</label><input class="field" id="customer" required placeholder="Your full name"></div><div><label>Phone Number *</label><input class="field" id="phone" type="tel" required placeholder="03XX XXXXXXX"></div></div>
+<label>Select Shoe *</label><select class="field" id="shoe" required><option value="">Choose a product</option></select>
+<div class="formrow"><div><label>Shoe Size *</label><input class="field" id="size" required placeholder="e.g. 8, 9, 42"></div><div><label>Quantity *</label><input class="field" id="qty" type="number" min="1" max="20" value="1" required></div></div>
+<label>Delivery Address *</label><textarea class="field" id="address" required placeholder="House, street, city"></textarea>
+<label>Payment</label><select class="field"><option>Cash on Delivery (COD)</option></select>
+<button class="btn" type="submit">CONFIRM ORDER ON WHATSAPP →</button>
+<p class="note">Your order opens in WhatsApp. Send the message and wait for the shop to confirm it.</p>
+</form></section>
 
-  <div class="categories">
+<footer><h2>AJ SHOES</h2><p>WALK WITH CONFIDENCE</p><p>Premium style • Everyday comfort • Footwear for everyone</p><p>© <span id="year"></span> AJ Shoes Footwear. All rights reserved.</p></footer>
+<a class="wa" id="whatsapp" href="https://wa.me/923432752543" target="_blank" rel="noopener">☏ Chat on WhatsApp</a>
 
-   <article class="category">
-    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85" alt="Men's sporty sneakers" loading="lazy">
-    <div class="category-content">
-     <span class="label">STYLE & PERFORMANCE</span>
-     <h3>Men's Shoes</h3>
-     <p>Discover sporty sneakers, casual footwear and smart styles for men.</p>
-     <a class="btn" href="https://wa.me/923432752543?text=Assalam%20o%20Alaikum%2C%20I%20want%20to%20see%20Men%27s%20Shoes.%20Please%20share%20designs%2C%20prices%20and%20sizes.">Explore Men's Shoes</a>
-    </div>
-   </article>
-
-   <article class="category">
-    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=900&q=85" alt="Women's fashionable shoes" loading="lazy">
-    <div class="category-content">
-     <span class="label">ELEGANCE & BEAUTY</span>
-     <h3>Women's Shoes</h3>
-     <p>Explore elegant heels, stylish flats and fashionable everyday footwear.</p>
-     <a class="btn" href="https://wa.me/923432752543?text=Assalam%20o%20Alaikum%2C%20I%20want%20to%20see%20Women%27s%20Shoes.%20Please%20share%20designs%2C%20prices%20and%20sizes.">Explore Women's Shoes</a>
-    </div>
-   </article>
-
-   <article class="category">
-    <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=900&q=85" alt="Children's colorful footwear" loading="lazy">
-    <div class="category-content">
-     <span class="label">LITTLE STEPS, BIG STYLE</span>
-     <h3>Children's Shoes</h3>
-     <p>Find cute, colourful and casual footwear styles for little feet.</p>
-     <a class="btn" href="https://wa.me/923432752543?text=Assalam%20o%20Alaikum%2C%20I%20want%20to%20see%20Children%27s%20Shoes.%20Please%20share%20designs%2C%20prices%20and%20sizes.">Explore Kids' Shoes</a>
-    </div>
-   </article>
-
-  </div>
- </div>
-</section>
-
-<section class="benefits">
- <div class="container">
-  <div class="section-heading">
-   <div class="eyebrow">THE AJ SHOES EXPERIENCE</div>
-   <h2>WHY SHOP <span class="gold">WITH US?</span></h2>
-  </div>
-  <div class="benefit-grid">
-   <div class="benefit">
-    <div class="icon">✦</div>
-    <h3>Stylish Selection</h3>
-    <p>Browse footwear ideas for everyday looks, special occasions and family needs.</p>
-   </div>
-   <div class="benefit">
-    <div class="icon">✓</div>
-    <h3>Personal Assistance</h3>
-    <p>Ask us directly about shoe sizes, colours, designs and current availability.</p>
-   </div>
-   <div class="benefit">
-    <div class="icon">↗</div>
-    <h3>Easy WhatsApp Orders</h3>
-    <p>Send your enquiry directly to WhatsApp to discuss your desired footwear.</p>
-   </div>
-  </div>
- </div>
-</section>
-
-<section id="about">
- <div class="container feature">
-  <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1100&q=85" alt="Premium footwear collection" loading="lazy">
-  <div>
-   <div class="eyebrow">ABOUT OUR BRAND</div>
-   <h2>YOUR STYLE.<br><span class="gold">YOUR CONFIDENCE.</span></h2>
-   <p>Welcome to AJ Shoes Footwear, your destination for exploring men's, women's and children's footwear. Find a style that suits you and contact us for current products, prices and sizes.</p>
-   <a class="btn" href="https://wa.me/923432752543?text=Assalam%20o%20Alaikum%2C%20I%20would%20like%20to%20know%20more%20about%20AJ%20Shoes.">Chat With Us</a>
-  </div>
- </div>
-</section>
-
-<section id="contact">
- <div class="container">
-  <div class="contact-box">
-   <div class="eyebrow">LET'S FIND YOUR NEXT PAIR</div>
-   <h2>READY TO <span class="gold">ORDER?</span></h2>
-   <p>Contact AJ Shoes on WhatsApp to ask about designs, sizes, colours and prices.</p>
-   <a class="btn" href="https://wa.me/923432752543?text=Assalam%20o%20Alaikum%2C%20I%20want%20to%20order%20shoes%20from%20AJ%20Shoes.">✆ &nbsp; ORDER ON WHATSAPP</a>
-  </div>
- </div>
-</section>
-
-</main>
-
-<footer>
- <div class="container footer-inner">
-  <div><strong>AJ <span class="gold">SHOES</span></strong> — Premium Footwear</div>
-  <div>WhatsApp: 0343 2752543</div>
-  <div>© 2026 AJ Shoes Footwear. All rights reserved.</div>
- </div>
-</footer>
-
-<a class="whatsapp-float" href="https://wa.me/923432752543?text=Assalam%20o%20Alaikum%2C%20I%20want%20to%20contact%20AJ%20Shoes." aria-label="Chat on WhatsApp">WhatsApp ↗</a>
-
+<script>
+const WHATSAPP="923432752543";
+const items=[
+{name:"Classic Sport Sneakers",cat:"Men",price:2499,img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=650&q=80",desc:"Sporty everyday style"},
+{name:"Urban Casual Shoes",cat:"Men",price:2799,img:"https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=650&q=80",desc:"Relaxed and versatile"},
+{name:"Elegant Ladies Heels",cat:"Ladies",price:2999,img:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=650&q=80",desc:"Elegant occasion wear"},
+{name:"Ladies Everyday Flats",cat:"Ladies",price:1899,img:"https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=650&q=80",desc:"Easy everyday comfort"},
+{name:"Kids Colour Sneakers",cat:"Kids",price:1599,img:"https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=650&q=80",desc:"Fun little-step style"},
+{name:"Kids Casual Shoes",cat:"Kids",price:1399,img:"https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=650&q=80",desc:"For busy little feet"},
+{name:"Premium Street Sneakers",cat:"Men",price:3199,img:"https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=650&q=80",desc:"Modern streetwear look"},
+{name:"Ladies Chic Sneakers",cat:"Ladies",price:2599,img:"https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=650&q=80",desc:"Fresh modern styling"}
+];
+let slideIndex=0;
+function showSlide(n){const slides=[...document.querySelectorAll(".slide")],dots=[...document.querySelectorAll(".dots button")];slideIndex=(n+slides.length)%slides.length;slides.forEach((s,i)=>s.classList.toggle("active",i===slideIndex));dots.forEach((d,i)=>d.classList.toggle("active",i===slideIndex))}
+setInterval(()=>showSlide(slideIndex+1),5000);
+function setFilter(cat){document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b.textContent.trim()===(cat==="All"?"All Shoes":cat==="Kids"?"Children":cat)));render(cat)}
+function render(cat="All"){const box=document.getElementById("products");box.innerHTML="";items.filter(p=>cat==="All"||p.cat===cat).forEach(p=>{const card=document.createElement("div");card.className="product";card.innerHTML=`<img loading="lazy" src="${p.img}" alt="${p.name}"><div class="info"><small>${p.cat.toUpperCase()}</small><h3>${p.name}</h3><p>${p.desc}</p><div class="buy"><strong>Rs. ${p.price.toLocaleString("en-PK")}</strong><button type="button">ORDER NOW</button></div></div>`;card.querySelector("button").onclick=()=>{document.getElementById("shoe").value=p.name;document.getElementById("order").scrollIntoView({behavior:"smooth"})};box.appendChild(card)})}
+render();
+items.forEach(p=>{const o=document.createElement("option");o.value=p.name;o.textContent=p.name+" — Rs. "+p.price.toLocaleString("en-PK");document.getElementById("shoe").appendChild(o)});
+document.getElementById("year").textContent=new Date().getFullYear();
+document.getElementById("orderform").addEventListener("submit",e=>{e.preventDefault();const p=items.find(x=>x.name===document.getElementById("shoe").value);if(!p)return;const q=Number(document.getElementById("qty").value);const message=`AJ SHOES — COD ORDER\nName: ${document.getElementById("customer").value}\nPhone: ${document.getElementById("phone").value}\nProduct: ${p.name}\nSize: ${document.getElementById("size").value}\nQuantity: ${q}\nSample subtotal: Rs. ${p.price*q}\nPayment: Cash on Delivery\nAddress: ${document.getElementById("address").value}\nPlease confirm stock, final price and delivery.`;window.open("https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(message),"_blank")});
+document.getElementById("reviewform").addEventListener("submit",e=>{e.preventDefault();const name=document.getElementById("reviewname").value.trim(),comment=document.getElementById("reviewtext").value.trim(),rating=Number(document.getElementById("rating").value);if(!name||!comment)return;const card=document.createElement("div");card.className="review";const stars=document.createElement("div");stars.className="stars";stars.textContent="★".repeat(rating)+"☆".repeat(5-rating);const p=document.createElement("p");p.textContent=comment;const strong=document.createElement("strong");strong.textContent=name;card.append(stars,p,strong);document.getElementById("reviewlist").prepend(card);e.target.reset();alert("Thank you! Your review has been added to this page.")});
+</script>
 </body>
 </html>
