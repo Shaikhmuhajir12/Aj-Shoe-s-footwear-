@@ -3,85 +3,199 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AJ Shoes | Premium Footwear</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aqib Javed Shoes</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;background:#101010;color:white}
-header{padding:22px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #333}
-.logo{font-size:25px;font-weight:bold;color:#d6ad60}
-header a{color:white;text-decoration:none}
-.hero{text-align:center;padding:75px 20px;background:linear-gradient(135deg,#191919,#302718)}
-.hero small{color:#d6ad60;letter-spacing:4px}
-.hero h1{font-size:clamp(35px,8vw,65px);margin:22px 0}
-.hero h1 span{color:#d6ad60}
-.hero p{color:#ddd;line-height:1.8;margin-bottom:28px}
-.btn{display:inline-block;background:#d6ad60;color:#111;padding:14px 27px;text-decoration:none;font-weight:bold;border-radius:5px}
-section{padding:55px 7%}
-.heading{text-align:center;font-size:30px;margin-bottom:35px}
-.heading span{color:#d6ad60}
-.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
-.card{background:#1d1d1d;border:1px solid #333;border-radius:10px;overflow:hidden;text-align:center;padding-bottom:24px}
-.shoe{height:180px;background:linear-gradient(135deg,#292929,#454039);display:flex;align-items:center;justify-content:center;font-size:85px}
-.card h3{margin:20px 0 10px}
-.card p{color:#d6ad60;margin-bottom:18px}
-.card a{color:#111;background:#d6ad60;padding:10px 20px;text-decoration:none;border-radius:4px}
-.about{text-align:center;background:#1b1b1b;line-height:2;color:#ddd}
-.about h2{color:#d6ad60;margin-bottom:18px}
-footer{text-align:center;padding:25px;color:#aaa;border-top:1px solid #333}
+*{box-sizing:border-box}
+body{margin:0;background:#101010;color:white;font-family:Arial,sans-serif}
+header{padding:18px;background:#080808;border-bottom:2px solid #d5aa50;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.logo{color:#e3bd68;font-size:23px;font-weight:bold}
+.logo span{border:2px solid #d5aa50;padding:6px;margin-right:8px}
+nav a{color:white;text-decoration:none;margin:8px;font-size:14px}
+.hero{text-align:center;padding:65px 15px;background:linear-gradient(135deg,#252016,#080808)}
+.hero h1{font-size:42px;margin:10px;color:#e5bd62}
+.hero p{color:#ddd}
+.btn{display:inline-block;background:#d5aa50;color:#111;padding:12px 18px;border:0;border-radius:7px;text-decoration:none;font-weight:bold;cursor:pointer}
+section{padding:35px 15px;max-width:1100px;margin:auto}
+h2{text-align:center;color:#e5bd62}
+.categories{text-align:center;margin:20px 0}
+.categories button{margin:5px;padding:10px 14px;background:#222;color:white;border:1px solid #d5aa50;border-radius:6px;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:#1b1b1b;border:1px solid #393123;border-radius:12px;overflow:hidden;padding-bottom:15px}
+.card img{width:100%;height:200px;object-fit:cover}
+.card h3,.card p{padding:0 13px}
+.price{color:#e5bd62;font-weight:bold;font-size:20px;padding:0 13px}
+.card .btn{margin:8px 13px}
+form{max-width:650px;margin:auto;background:#1b1b1b;padding:20px;border-radius:12px}
+input,select,textarea{width:100%;padding:12px;margin:7px 0 14px;background:#101010;color:white;border:1px solid #5b4b2a;border-radius:6px}
+label{color:#e5bd62}
+form button{width:100%}
+.review{background:#1b1b1b;padding:15px;border-radius:10px;margin:12px 0}
+footer{text-align:center;padding:28px;background:#080808;color:#ccc;border-top:1px solid #d5aa50}
+footer b{color:#e5bd62}
+.wa{position:fixed;bottom:18px;right:15px;background:#25d366;color:#06250f;padding:13px 17px;border-radius:30px;text-decoration:none;font-weight:bold}
+@media(max-width:500px){.hero h1{font-size:32px}nav{margin-top:15px}}
 </style>
 </head>
 <body>
+
 <header>
-<div class="logo">AJ SHOES</div>
-<a href="#collection">Collection</a>
+  <div class="logo"><span>AJ</span> AQIB JAVED SHOES</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#collection">Collection</a>
+    <a href="#order">Order</a>
+    <a href="#reviews">Reviews</a>
+  </nav>
 </header>
 
-<div class="hero">
-<small>PREMIUM FOOTWEAR</small>
-<h1>WALK WITH <span>CONFIDENCE</span></h1>
-<p>Discover your style. Step into comfort.<br>Quality footwear for every occasion.</p>
-<a class="btn" href="#collection">EXPLORE COLLECTION</a>
+<div class="hero" id="home">
+  <h1>WALK WITH CONFIDENCE</h1>
+  <p>Premium Footwear for Men, Women & Kids</p>
+  <a class="btn" href="#collection">EXPLORE COLLECTION</a>
 </div>
 
 <section id="collection">
-<h2 class="heading">OUR <span>COLLECTION</span></h2>
-<div class="products">
-<div class="card">
-<div class="shoe">👟</div>
-<h3>Sports Shoes</h3>
-<p>Style meets comfort</p>
-<a href="#contact">Order Now</a>
+<h2>OUR SHOE COLLECTION</h2>
+<div class="categories">
+  <button onclick="showCategory('all')">All Shoes</button>
+  <button onclick="showCategory('men')">Men's Shoes</button>
+  <button onclick="showCategory('women')">Ladies Shoes</button>
+  <button onclick="showCategory('kids')">Kids Shoes</button>
 </div>
-<div class="card">
-<div class="shoe">👞</div>
-<h3>Formal Shoes</h3>
-<p>Classic and elegant</p>
-<a href="#contact">Order Now</a>
-</div>
-<div class="card">
-<div class="shoe">🥾</div>
-<h3>Casual Shoes</h3>
-<p>Made for everyday life</p>
-<a href="#contact">Order Now</a>
-</div>
-</div>
+<div class="grid" id="products"></div>
 </section>
 
-<section class="about">
-<h2>WHY CHOOSE AJ SHOES?</h2>
-<p>Modern Designs • Everyday Comfort • Stylish Footwear</p>
-<p>Your style, your confidence, your choice.</p>
+<section id="order">
+<h2>ORDER CONFIRMATION</h2>
+<form id="orderForm">
+<label>Your Name</label>
+<input id="name" required placeholder="Enter your full name">
+<label>Phone Number</label>
+<input id="phone" required type="tel" placeholder="03XXXXXXXXX">
+<label>Select Shoes</label>
+<select id="shoe" required></select>
+<label>Shoe Size</label>
+<select id="size" required>
+<option value="">Select size</option>
+<script>
+for(let i=25;i<=45;i++)document.write(`<option>${i}</option>`);
+</script>
+</select>
+<label>Quantity</label>
+<input id="qty" type="number" min="1" value="1" required>
+<label>Full Delivery Address</label>
+<textarea id="address" required placeholder="House, street, city"></textarea>
+<button class="btn" type="submit">CONFIRM ORDER ON WHATSAPP</button>
+</form>
 </section>
 
-<section id="contact" style="text-align:center">
-<h2 class="heading">CONTACT <span>US</span></h2>
-<p style="margin-bottom:25px;color:#ddd">Want to order your favourite shoes?</p>
-<a class="btn" href="https://wa.me/" target="_blank">CONTACT ON WHATSAPP</a>
+<section id="reviews">
+<h2>CUSTOMER REVIEWS</h2>
+<form id="reviewForm">
+<label>Your Name</label>
+<input id="reviewName" required>
+<label>Your Rating</label>
+<select id="rating"><option>★★★★★</option><option>★★★★☆</option><option>★★★☆☆</option><option>★★☆☆☆</option><option>★☆☆☆☆</option></select>
+<label>Your Comment</label>
+<textarea id="comment" required placeholder="Write your review"></textarea>
+<button class="btn" type="submit">SUBMIT REVIEW</button>
+</form>
+<div id="reviewList"></div>
 </section>
 
 <footer>
-<p>© 2026 AJ Shoes Footwear | All Rights Reserved</p>
+<h3><b>AJ — AQIB JAVED SHOES</b></h3>
+<p>Premium footwear for every step.</p>
+<p>WhatsApp: <b>+92 343 2752543</b></p>
+<p>© <span id="year"></span> Aqib Javed Shoes</p>
 </footer>
+
+<a class="wa" href="https://wa.me/923432752543" target="_blank">WhatsApp Us</a>
+
+<script>
+const whatsapp="923432752543";
+
+const shoes=[
+{id:1,cat:"men",name:"Men's Sneakers",price:2499,img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80"},
+{id:2,cat:"men",name:"Men's Casual Shoes",price:2799,img:"https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=700&q=80"},
+{id:3,cat:"men",name:"Men's Sports Shoes",price:3199,img:"https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=700&q=80"},
+{id:4,cat:"women",name:"Ladies Fashion Shoes",price:2599,img:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80"},
+{id:5,cat:"women",name:"Ladies Heels",price:2999,img:"https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=700&q=80"},
+{id:6,cat:"women",name:"Ladies Flats",price:1899,img:"https://images.unsplash.com/photo-1562273138-f46be4ebdf33?auto=format&fit=crop&w=700&q=80"},
+{id:7,cat:"kids",name:"Kids Colourful Shoes",price:1499,img:"https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=700&q=80"},
+{id:8,cat:"kids",name:"Kids School Shoes",price:1299,img:"https://images.unsplash.com/photo-1507464098880-e367bc5d2c08?auto=format&fit=crop&w=700&q=80"},
+{id:9,cat:"kids",name:"Kids Sports Shoes",price:1699,img:"https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=700&q=80"}
+];
+
+function render(list){
+document.getElementById("products").innerHTML=list.map(s=>`
+<div class="card">
+<img src="${s.img}" alt="${s.name}" loading="lazy">
+<h3>${s.name}</h3>
+<p>Comfortable, stylish footwear.</p>
+<div class="price">Rs. ${s.price.toLocaleString()}</div>
+<button class="btn" onclick="chooseShoe(${s.id})">Order Now</button>
+</div>`).join("");
+}
+
+function showCategory(cat){
+render(cat==="all"?shoes:shoes.filter(s=>s.cat===cat));
+}
+
+function chooseShoe(id){
+document.getElementById("shoe").value=id;
+document.getElementById("order").scrollIntoView({behavior:"smooth"});
+}
+
+document.getElementById("shoe").innerHTML=
+'<option value="">Choose shoes</option>'+
+shoes.map(s=>`<option value="${s.id}">${s.name} — Rs. ${s.price}</option>`).join("");
+
+document.getElementById("orderForm").addEventListener("submit",function(e){
+e.preventDefault();
+const s=shoes.find(x=>x.id===Number(document.getElementById("shoe").value));
+if(!s)return;
+const quantity=Number(document.getElementById("qty").value);
+const message=`NEW ORDER - AQIB JAVED SHOES
+Name: ${document.getElementById("name").value}
+Phone: ${document.getElementById("phone").value}
+Product: ${s.name}
+Price: Rs. ${s.price}
+Size: ${document.getElementById("size").value}
+Quantity: ${quantity}
+Estimated total: Rs. ${s.price*quantity}
+Address: ${document.getElementById("address").value}
+
+Please confirm availability and delivery charges.`;
+window.open("https://wa.me/"+whatsapp+"?text="+encodeURIComponent(message),"_blank");
+});
+
+function escapeHTML(s){
+return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+function loadReviews(){
+let reviews=[];
+try{reviews=JSON.parse(localStorage.getItem("ajReviews")||"[]")}catch(e){}
+document.getElementById("reviewList").innerHTML=reviews.map(r=>`
+<div class="review"><b>${escapeHTML(r.name)}</b> — ${escapeHTML(r.rating)}
+<p>${escapeHTML(r.comment)}</p></div>`).join("");
+}
+document.getElementById("reviewForm").addEventListener("submit",function(e){
+e.preventDefault();
+let reviews=[];
+try{reviews=JSON.parse(localStorage.getItem("ajReviews")||"[]")}catch(e){}
+reviews.push({
+name:document.getElementById("reviewName").value,
+rating:document.getElementById("rating").value,
+comment:document.getElementById("comment").value
+});
+try{localStorage.setItem("ajReviews",JSON.stringify(reviews));}
+catch(e){alert("Review save nahi ho saka.");return;}
+this.reset();loadReviews();alert("Thank you for your review!");
+});
+document.getElementById("year").textContent=new Date().getFullYear();
+render(shoes);loadReviews();
+</script>
 </body>
 </html>
