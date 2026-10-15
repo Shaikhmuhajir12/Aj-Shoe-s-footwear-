@@ -3,396 +3,351 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AJ Shoes | Aqib Javed Premium Footwear</title>
-<meta name="description" content="Explore AJ Shoes by Aqib Javed: sneakers, sports shoes, formal footwear, ladies shoes and kids shoes.">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AJ Shoes | Aqib Javed Shoes</title>
+<meta name="description" content="Shop stylish men's, ladies' and children's footwear at AJ Shoes. Order through WhatsApp with Cash on Delivery.">
 
 <style>
-:root{
- --green:#123c2b;--green2:#235b42;--gold:#c9a45c;
- --cream:#faf6ed;--white:#fffdf8;--ink:#29251e;--muted:#766f62;
+:root {
+  --green:#173e32;
+  --gold:#c49a46;
+  --cream:#fffaf0;
+  --dark:#20231f;
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--cream);color:var(--ink);font-family:Poppins,Arial,sans-serif}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;background:var(--cream);color:var(--dark)}
 a{text-decoration:none;color:inherit}
-button,input,select,textarea{font:inherit}
-.topbar{background:var(--green);color:#f1dba9;text-align:center;padding:9px;font-size:10px;letter-spacing:2px}
-header{position:sticky;top:0;z-index:20;background:#fffdf8ed;backdrop-filter:blur(12px);border-bottom:1px solid #e6d9c2}
-nav{max-width:1250px;margin:auto;padding:12px 5%;display:flex;align-items:center;justify-content:space-between;gap:15px}
-.brand{display:flex;align-items:center;gap:11px}
-.logo{height:59px;width:59px;border:2px solid var(--gold);border-radius:50%;background:var(--green);color:#f3d48d;display:grid;place-items:center;position:relative;box-shadow:0 4px 15px #123c2b25}
-.logo b{font:800 24px Georgia}
-.logo span{position:absolute;bottom:-5px;right:-5px;background:var(--gold);border:2px solid var(--white);border-radius:50%;width:25px;height:25px;display:grid;place-items:center;font-size:13px}
-.brand h2{font:800 21px 'Playfair Display',serif;color:var(--green);margin:0}
-.brand small{font-size:9px;letter-spacing:2px;color:#9c773e}
-.links{display:flex;align-items:center;gap:17px;font-size:11px;font-weight:600}
-.links a:hover{color:#a47c39}
-.btn{display:inline-block;background:var(--green);color:white;padding:13px 20px;border:1px solid var(--green);font-size:11px;font-weight:700;transition:.25s;cursor:pointer}
-.btn:hover{background:var(--gold);border-color:var(--gold);color:#1e2b20;transform:translateY(-2px)}
-.btn.gold{background:var(--gold);border-color:var(--gold);color:#1e2b20}
-.hero{background:linear-gradient(120deg,#f7edda,#e5d5b7);overflow:hidden}
-.hero-inner{max-width:1250px;margin:auto;min-height:490px;padding:50px 7%;display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}
-.eyebrow{font-size:10px;letter-spacing:4px;color:#9b7539;font-weight:700}
-.hero h1{font:700 clamp(40px,5.5vw,69px)/1.1 'Playfair Display',serif;color:var(--green);margin:17px 0}
-.hero h1 em{color:#b18a4c}
-.hero p{font-size:13px;line-height:2;color:#665b4c;max-width:480px}
-.urdu{font-family:'Noto Nastaliq Urdu',serif;direction:rtl}
-.hero .urdu{font-size:18px;color:var(--green);margin:15px 0}
-.orbit-stage{height:365px;position:relative;display:grid;place-items:center}
-.orbit-ring{width:min(330px,75vw);height:min(330px,75vw);max-width:330px;max-height:330px;border:2px dashed #b7955c;border-radius:50%;position:absolute;animation:spin 24s linear infinite}
-.orbit-ring:before{content:"";position:absolute;inset:16px;border:1px solid #c9a45c77;border-radius:50%}
-.orbit-shoe{width:100px;height:100px;object-fit:cover;border-radius:50%;border:5px solid var(--white);position:absolute;box-shadow:0 8px 25px #1c34252b}
-.orbit-shoe.one{top:-12px;left:calc(50% - 50px)}
-.orbit-shoe.two{bottom:5px;right:-12px}
-.orbit-shoe.three{bottom:5px;left:-12px}
-.orbit-center{width:150px;height:150px;border-radius:50%;background:var(--green);border:5px double var(--gold);display:flex;align-items:center;justify-content:center;flex-direction:column;color:#f2d48d;box-shadow:0 15px 40px #123c2b2a;z-index:2}
-.orbit-center b{font:800 44px Georgia}
-.orbit-center small{font-size:9px;letter-spacing:3px}
-@keyframes spin{to{transform:rotate(360deg)}}
-.hero-note{position:absolute;bottom:0;font-size:10px;letter-spacing:2px;color:#836b48}
-.benefits{display:grid;grid-template-columns:repeat(3,1fr);background:#fff;padding:20px 5%;text-align:center}
-.benefits div{border-right:1px solid #e8decd;font-size:12px;font-weight:600;color:var(--green)}
-.benefits div:last-child{border:0}
-.benefits span{display:block;color:var(--muted);font-size:10px;font-weight:400;margin-top:5px}
-section{max-width:1300px;margin:auto;padding:65px 5%}
-.heading{text-align:center;margin-bottom:30px}
-.heading small{color:#a78346;letter-spacing:4px;font-size:10px;font-weight:700}
-.heading h2{font:700 clamp(29px,4vw,43px) 'Playfair Display',serif;color:var(--green);margin:10px 0}
-.heading p{font-size:12px;color:var(--muted);line-height:1.9}
-.heading .urdu{font-size:17px;color:var(--green)}
-.category-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.category{height:290px;position:relative;overflow:hidden;background:#e8dcc9;border-radius:5px}
-.category img{width:100%;height:100%;object-fit:cover;transition:.6s}
-.category:hover img{transform:scale(1.08)}
-.category:after{content:"";position:absolute;inset:30% 0 0;background:linear-gradient(transparent,#101c16e8)}
-.cattext{position:absolute;bottom:20px;left:20px;right:15px;z-index:2;color:white}
-.cattext small{font-size:9px;letter-spacing:2px;color:#f1d48e}
-.cattext h3{font:700 28px Georgia;margin:8px 0}
-.cattext a{font-size:10px;border-bottom:1px solid #e6ca8c;padding-bottom:4px}
-.collection{background:#fffdf8;max-width:none}
-.collection section{max-width:1300px}
-.filters{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin:25px 0}
-.filter{background:transparent;border:1px solid #d9c7aa;color:var(--green);padding:9px 15px;font-size:10px;cursor:pointer}
-.filter.active,.filter:hover{background:var(--green);color:white}
-.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.product{background:var(--cream);border:1px solid #eee2d0;min-width:0;transition:.25s}
-.product:hover{transform:translateY(-4px);box-shadow:0 10px 25px #123c2b12}
-.product img{display:block;width:100%;height:225px;object-fit:cover;background:#eee}
-.info{padding:15px}
-.tag{font-size:9px;letter-spacing:2px;color:#a17c40;font-weight:700}
-.info h3{font:700 20px Georgia;color:var(--green);margin:9px 0}
-.info p{font-size:11px;line-height:1.8;color:var(--muted);margin:7px 0}
-.suitable{font-size:10px;color:#4d6656;background:#eaf0e8;padding:9px;margin:10px 0;line-height:1.8}
-.buy{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px}
-.buy strong{font-size:13px;color:var(--green)}
-.buy button{background:var(--green);color:white;border:0;padding:10px;font-size:10px;cursor:pointer}
-.buy button:hover{background:var(--gold);color:#17271c}
-.promo{max-width:none;background:var(--green);color:white;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center;padding:60px 8%}
-.promo h2{font:700 43px 'Playfair Display',serif;color:#f0d18c;margin:12px 0}
-.promo p{font-size:12px;line-height:2;color:#e1e9e1}
-.promo img{width:100%;height:300px;object-fit:cover;border:5px solid #ffffff1c}
-.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
-.review{background:white;border:1px solid #eadfce;padding:20px}
-.stars{color:#b58b50;letter-spacing:3px}
-.review p{font-size:11px;line-height:1.9;color:#67594c}
-.formbox{max-width:680px;margin:25px auto 0;padding:25px;background:white;border:1px solid #eadfce}
-.formbox h3{font:700 26px Georgia;color:var(--green);margin:0 0 18px}
-.field{width:100%;padding:12px;margin:7px 0 13px;border:1px solid #dfd1bd;background:#fffdf8;font-size:12px;border-radius:2px}
-textarea.field{min-height:85px}
-.formrow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-label{font-size:10px;font-weight:600;color:var(--green)}
-.formbox .btn{width:100%}
-.note{font-size:10px;color:var(--muted);line-height:1.8;margin-top:12px}
-.socials{display:flex;justify-content:center;gap:13px;flex-wrap:wrap;margin:25px 0}
-.social{width:49px;height:49px;border-radius:50%;display:grid;place-items:center;color:white;font-size:20px;font-weight:800;box-shadow:0 5px 14px #123c2b19;transition:.25s}
-.social:hover{transform:translateY(-5px) scale(1.06)}
-.fb{background:#1877f2}.yt{background:#e62117}.tt{background:#171717;border:1px solid var(--gold)}.wa-icon{background:#168c54}.ig{background:linear-gradient(35deg,#feda75,#d62976,#962fbf,#4f5bd5)}
-footer{background:#102a20;color:#f7ead8;text-align:center;padding:35px 15px;border-top:3px solid var(--gold)}
-footer h2{font:700 30px Georgia;color:#d5b27c;margin:0 0 10px}
-footer p{font-size:10px;color:#d6c4ad;line-height:2}
-.wa-float{position:fixed;right:15px;bottom:15px;background:#168c54;color:white;border-radius:30px;padding:13px 17px;font-size:11px;font-weight:700;z-index:30;box-shadow:0 5px 20px #0003}
-@media(max-width:800px){
- nav{padding:10px 3%;flex-wrap:wrap}
- .brand h2{font-size:18px}.logo{width:49px;height:49px}
- .links{width:100%;justify-content:center;gap:13px;flex-wrap:wrap;font-size:10px}
- .hero-inner{grid-template-columns:1fr;padding:40px 7%;gap:10px}
- .orbit-stage{height:325px}
- .benefits{padding:17px 2%}.benefits div{font-size:10px}
- .category-grid{grid-template-columns:1fr 1fr}
- .category{height:260px}
- .products{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
- .product img{height:165px}.info{padding:11px}.info h3{font-size:17px}
- .buy{align-items:flex-start;flex-direction:column}.buy button{width:100%}
- .promo{grid-template-columns:1fr;padding:40px 7%}.promo h2{font-size:35px}
- .reviews{grid-template-columns:1fr}
- section{padding:45px 5%}
+header{background:var(--green);color:white;padding:15px 5%;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:10px;font-weight:bold;font-size:23px}
+.logo-mark{border:2px solid var(--gold);color:var(--gold);padding:8px;border-radius:50%;font-size:25px}
+nav{display:flex;gap:15px;flex-wrap:wrap;font-size:14px}
+nav a:hover{color:var(--gold)}
+.hero{padding:55px 6%;background:linear-gradient(120deg,#173e32,#285c48);color:white;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px}
+.hero h1{font-size:clamp(34px,5vw,58px);margin:10px 0;color:#f3d18a}
+.hero p{line-height:1.8}
+.hero img{width:100%;height:320px;object-fit:cover;border-radius:18px;border:3px solid var(--gold)}
+.btn{display:inline-block;background:var(--gold);color:#17261e;padding:13px 20px;border-radius:30px;font-weight:bold;border:0;cursor:pointer;margin:5px 5px 5px 0}
+.btn:hover{opacity:.85}
+section{padding:45px 5%}
+.heading{text-align:center;margin:0 0 28px}
+.heading h2{color:var(--green);font-size:30px;margin-bottom:8px}
+.heading p{color:#666}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.card{background:white;border-radius:15px;overflow:hidden;box-shadow:0 5px 18px #00000012;border:1px solid #eee}
+.card img{width:100%;height:210px;object-fit:cover;display:block}
+.card-body{padding:16px}
+.card h3{margin:5px 0 10px;color:var(--green)}
+.card p{line-height:1.6;color:#666;font-size:14px}
+.price{color:#a47b2f;font-weight:bold;font-size:20px}
+.small{font-size:12px;color:#777}
+.why{background:#eee9dc}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;text-align:center}
+.feature{padding:20px;background:white;border-radius:12px}
+.feature b{display:block;color:var(--green);margin:8px}
+form{max-width:650px;margin:auto;background:white;padding:22px;border-radius:15px;box-shadow:0 5px 18px #00000012}
+input,select,textarea{width:100%;padding:13px;margin:7px 0 13px;border:1px solid #ddd;border-radius:8px;font:inherit}
+textarea{min-height:100px;resize:vertical}
+label{font-weight:bold;font-size:14px}
+.review{background:white;padding:18px;border-radius:12px;border-left:4px solid var(--gold);margin-bottom:15px}
+.stars{color:#d09b25}
+.socials{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.social{display:inline-block;padding:12px 17px;border-radius:25px;background:white;color:var(--green);font-weight:bold;border:1px solid #ddd}
+.social:hover{background:var(--gold)}
+footer{background:var(--green);color:white;text-align:center;padding:30px 15px;line-height:1.8}
+footer a{color:#f3d18a}
+#reviewsList{margin-top:25px}
+.notice{font-size:13px;color:#666;line-height:1.6}
+.whatsapp-float{position:fixed;right:16px;bottom:18px;background:#20b85a;color:white;padding:14px 18px;border-radius:35px;font-weight:bold;box-shadow:0 4px 15px #0003;z-index:5}
+@media(max-width:750px){
+ .hero{grid-template-columns:1fr;padding:35px 5%}
+ .hero img{height:240px}
+ .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .card img{height:150px}
+ .card-body{padding:12px}
+ .features{grid-template-columns:1fr}
+ header{justify-content:center}
+ nav{justify-content:center}
 }
 @media(max-width:420px){
- .category-grid{grid-template-columns:1fr}
- .category{height:280px}
- .brand h2{font-size:16px}.brand small{letter-spacing:1px;font-size:8px}
- .orbit-shoe{width:82px;height:82px}
- .orbit-center{width:130px;height:130px}
- .orbit-center b{font-size:37px}
- .formrow{grid-template-columns:1fr;gap:0}
+ .grid{grid-template-columns:1fr}
+ .card img{height:230px}
 }
 </style>
 </head>
-<body>
-<div class="topbar">✦ PREMIUM FOOTWEAR · STYLE · COMFORT · QUALITY ✦</div>
 
+<body>
 <header>
-<nav>
-<a class="brand" href="#home">
- <div class="logo"><b>AJ</b><span>👟</span></div>
- <div><h2>AQIB JAVED</h2><small>AJ SHOES · PREMIUM FOOTWEAR</small></div>
-</a>
-<div class="links">
- <a href="#home">Home</a><a href="#categories">Categories</a>
- <a href="#collection">Collection</a><a href="#reviews">Reviews</a>
- <a class="btn" href="#order">ORDER NOW</a>
-</div>
-</nav>
+  <a href="#home" class="logo">
+    <span class="logo-mark">AJ</span>
+    <span>AJ SHOES<small style="display:block;font-size:10px;color:#f3d18a;letter-spacing:2px">AQIB JAVED FOOTWEAR</small></span>
+  </a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#categories">Categories</a>
+    <a href="#collection">Collection</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#order">Order Now</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<div class="hero" id="home">
-<div class="hero-inner">
- <div>
-  <div class="eyebrow">THE ART OF PREMIUM FOOTWEAR</div>
-  <h1>Walk With<br><em>Confidence.</em></h1>
-  <p>Discover shoes for every style, every occasion and every step. Explore the AJ Shoes collection for the whole family.</p>
-  <p class="urdu">ہر قدم پر اسٹائل، ہر قدم پر اعتماد</p>
-  <a class="btn gold" href="#categories">EXPLORE COLLECTION →</a>
-  <a class="btn" href="#order">SHOP NOW</a>
- </div>
- <div class="orbit-stage">
-  <div class="orbit-ring">
-   <img class="orbit-shoe one" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=250&q=80" alt="Sport sneaker">
-   <img class="orbit-shoe two" src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80" alt="Ladies footwear">
-   <img class="orbit-shoe three" src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=250&q=80" alt="Kids footwear">
+<main>
+<section class="hero" id="home">
+  <div>
+    <p style="color:#f3d18a;font-weight:bold;letter-spacing:3px">PREMIUM FOOTWEAR</p>
+    <h1>Walk With Confidence.</h1>
+    <p>Discover your style. Step into comfort. Find fashionable shoes for men, ladies and children at AJ Shoes.</p>
+    <a href="#collection" class="btn">Explore Collection</a>
+    <a href="#order" class="btn" style="background:white">Order Now</a>
   </div>
-  <div class="orbit-center"><b>AJ</b><small>SHOES</small><span style="font-size:23px">👟</span></div>
-  <div class="hero-note">STYLE · QUALITY · COMFORT</div>
- </div>
-</div>
-</div>
-
-<div class="benefits">
- <div>✦ Modern Designs<span>Styles for every look</span></div>
- <div>✧ Everyday Comfort<span>Find your perfect fit</span></div>
- <div>◇ Easy Ordering<span>WhatsApp order support</span></div>
-</div>
-
-<section id="categories">
-<div class="heading">
- <small>FIND YOUR PERFECT PAIR</small><h2>Shop By Category</h2>
- <p>Explore our footwear range by style and occasion.</p>
- <p class="urdu">اپنی پسند اور ضرورت کے مطابق جوتے منتخب کریں</p>
-</div>
-<div class="category-grid" id="categoryGrid"></div>
+  <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=85" alt="Stylish sports shoe">
 </section>
 
-<div class="collection" id="collection"><section>
-<div class="heading">
- <small>THE AJ SHOE EDIT</small><h2>Our Shoe Collection</h2>
- <p>Browse styles, learn where they fit best, and ask us about sizes and availability.</p>
-</div>
-<div class="filters" id="filters"></div>
-<div class="products" id="products"></div>
-<p class="note">تصاویر مثال کے طور پر ہیں۔ قیمت، سائز، دستیابی اور اصل پروڈکٹ آرڈر سے پہلے WhatsApp پر تصدیق کریں۔</p>
-</section></div>
+<section id="categories">
+  <div class="heading">
+    <h2>Shop By Category</h2>
+    <p>Find the perfect pair for everyone.</p>
+  </div>
+  <div class="grid">
+    <a class="card" href="#collection">
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80" alt="Men's shoes">
+      <div class="card-body"><h3>Men's Shoes</h3><p>Sports, casual and formal styles for everyday wear.</p><span class="price">Explore →</span></div>
+    </a>
+    <a class="card" href="#collection">
+      <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80" alt="Ladies' footwear">
+      <div class="card-body"><h3>Ladies' Shoes</h3><p>Elegant footwear for parties, outings and daily comfort.</p><span class="price">Explore →</span></div>
+    </a>
+    <a class="card" href="#collection">
+      <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=700&q=80" alt="Children's shoes">
+      <div class="card-body"><h3>Children's Shoes</h3><p>Colourful and comfortable styles for little feet.</p><span class="price">Explore →</span></div>
+    </a>
+  </div>
+</section>
 
-<div class="promo">
- <div><div class="eyebrow">THE AJ DIFFERENCE</div>
- <h2>Every Step.<br>Every Occasion.</h2>
- <p>From sporty sneakers to elegant formal shoes, discover a style that matches your day.</p>
- <p class="urdu" style="font-size:18px">ہر موقع کے لیے بہترین انداز</p>
- <a class="btn gold" href="#order">PLACE YOUR ORDER →</a></div>
- <img loading="lazy" src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=900&q=85" alt="Footwear collection">
-</div>
+<section id="collection" style="background:#f3eee2">
+  <div class="heading">
+    <h2>Our Shoe Collection</h2>
+    <p>Demo products and prices. Confirm availability before ordering.</p>
+  </div>
+  <div class="grid">
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80" alt="Red sports sneakers">
+      <div class="card-body"><h3>Sports Sneakers</h3><p>Lightweight look for walking, gym and casual wear.</p><p class="price">Rs. 2,499</p><button class="btn" onclick="orderProduct('Sports Sneakers - Rs. 2,499')">Order Now</button></div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=700&q=80" alt="Classic casual shoes">
+      <div class="card-body"><h3>Casual Shoes</h3><p>Versatile style for everyday outings and daily use.</p><p class="price">Rs. 2,199</p><button class="btn" onclick="orderProduct('Casual Shoes - Rs. 2,199')">Order Now</button></div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=700&q=80" alt="Formal footwear">
+      <div class="card-body"><h3>Formal Shoes</h3><p>Classic appearance for office, meetings and events.</p><p class="price">Rs. 3,499</p><button class="btn" onclick="orderProduct('Formal Shoes - Rs. 3,499')">Order Now</button></div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80" alt="Ladies heels">
+      <div class="card-body"><h3>Ladies Heels</h3><p>Elegant design for celebrations and special occasions.</p><p class="price">Rs. 2,799</p><button class="btn" onclick="orderProduct('Ladies Heels - Rs. 2,799')">Order Now</button></div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=700&q=80" alt="Children's footwear">
+      <div class="card-body"><h3>Kids Shoes</h3><p>Everyday footwear for school, play and family outings.</p><p class="price">Rs. 1,499</p><button class="btn" onclick="orderProduct('Kids Shoes - Rs. 1,499')">Order Now</button></div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=700&q=80" alt="Modern sneakers">
+      <div class="card-body"><h3>Modern Sneakers</h3><p>Trendy footwear for casual outfits and weekend plans.</p><p class="price">Rs. 2,699</p><button class="btn" onclick="orderProduct('Modern Sneakers - Rs. 2,699')">Order Now</button></div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=700&q=80" alt="Boot style shoes">
+      <div class="card-body"><h3>Boots</h3><p>Bold styling for outings and everyday fashion.</p><p class="price">Rs. 3,299</p><button class="btn" onclick="orderProduct('Boots - Rs. 3,299')">Order Now</button></div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1562273138-f46be4ebdf33?auto=format&fit=crop&w=700&q=80" alt="Comfortable sandals">
+      <div class="card-body"><h3>Sandals</h3><p>Easygoing footwear for relaxed, warm-weather days.</p><p class="price">Rs. 1,299</p><button class="btn" onclick="orderProduct('Sandals - Rs. 1,299')">Order Now</button></div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=700&q=80" alt="Everyday footwear">
+      <div class="card-body"><h3>Everyday Comfort</h3><p>Simple styles for daily activities and casual looks.</p><p class="price">Rs. 1,899</p><button class="btn" onclick="orderProduct('Everyday Comfort - Rs. 1,899')">Order Now</button></div>
+    </article>
+  </div>
+</section>
 
-<section id="reviews">
-<div class="heading"><small>YOUR WORDS MATTER</small><h2>Customer Reviews</h2><p>Share your feedback with AJ Shoes.</p></div>
-<div class="reviews" id="reviewlist">
- <div class="review"><div class="stars">★★★★★</div><p>Sample design preview. Replace with genuine customer feedback.</p><strong>Sample Review</strong></div>
-</div>
-<form class="formbox" id="reviewform">
- <h3>Write a Review</h3>
- <label for="reviewname">Your Name</label><input class="field" id="reviewname" required placeholder="Enter your name">
- <label for="rating">Your Rating</label>
- <select class="field" id="rating"><option value="5">★★★★★ Excellent</option><option value="4">★★★★☆ Very Good</option><option value="3">★★★☆☆ Good</option><option value="2">★★☆☆☆ Fair</option><option value="1">★☆☆☆☆ Poor</option></select>
- <label for="reviewtext">Your Comment</label><textarea class="field" id="reviewtext" required placeholder="Write your feedback"></textarea>
- <button class="btn" type="submit">SUBMIT REVIEW</button>
- <p class="note">Reviews added here stay in this browser session only; permanent public reviews need a database.</p>
-</form>
+<section class="why">
+  <div class="heading"><h2>Why Choose AJ Shoes?</h2><p>Your style, your comfort.</p></div>
+  <div class="features">
+    <div class="feature"><div style="font-size:30px">👟</div><b>Stylish Designs</b><p>Modern footwear for different occasions.</p></div>
+    <div class="feature"><div style="font-size:30px">✨</div><b>Comfort First</b><p>Choose the style that suits your needs.</p></div>
+    <div class="feature"><div style="font-size:30px">📦</div><b>Cash on Delivery</b><p>Submit your order details through WhatsApp.</p></div>
+  </div>
 </section>
 
 <section id="order">
-<div class="heading"><small>QUICK & EASY ORDERING</small><h2>Cash on Delivery</h2><p>Send your order details directly to our WhatsApp for confirmation.</p></div>
-<form class="formbox" id="orderform">
- <h3>Order Details</h3>
- <div class="formrow">
-  <div><label for="customer">Full Name *</label><input class="field" id="customer" required placeholder="Your full name"></div>
-  <div><label for="phone">Phone Number *</label><input class="field" id="phone" type="tel" required placeholder="03XX XXXXXXX"></div>
- </div>
- <label for="shoe">Select Shoe *</label><select class="field" id="shoe" required><option value="">Choose a product</option></select>
- <div class="formrow">
-  <div><label for="size">Shoe Size *</label><input class="field" id="size" required placeholder="e.g. 8, 9, 42"></div>
-  <div><label for="qty">Quantity *</label><input class="field" id="qty" type="number" min="1" max="20" value="1" required></div>
- </div>
- <label for="address">Delivery Address *</label><textarea class="field" id="address" required placeholder="House, street, city"></textarea>
- <label for="payment">Payment Method</label><select class="field" id="payment"><option>Cash on Delivery (COD)</option></select>
- <button class="btn" type="submit">SEND ORDER ON WHATSAPP →</button>
- <p class="note">آپ کا آرڈر WhatsApp میں تیار ہوگا۔ پیغام بھیجنے کے بعد دکان سے اسٹاک، حتمی قیمت اور ڈیلیوری کی تصدیق لیں۔</p>
-</form>
+  <div class="heading">
+    <h2>Place Your Order</h2>
+    <p>Fill in your details. Your order will open in WhatsApp for confirmation.</p>
+  </div>
+  <form id="orderForm">
+    <label for="customer">Your Name</label>
+    <input id="customer" required placeholder="Enter your full name">
+
+    <label for="phone">Mobile Number</label>
+    <input id="phone" required type="tel" placeholder="03XXXXXXXXX">
+
+    <label for="address">Delivery Address</label>
+    <textarea id="address" required placeholder="House, street, city"></textarea>
+
+    <label for="product">Select Shoe</label>
+    <select id="product" required>
+      <option value="">Choose a product</option>
+      <option>Sports Sneakers - Rs. 2,499</option>
+      <option>Casual Shoes - Rs. 2,199</option>
+      <option>Formal Shoes - Rs. 3,499</option>
+      <option>Ladies Heels - Rs. 2,799</option>
+      <option>Kids Shoes - Rs. 1,499</option>
+      <option>Modern Sneakers - Rs. 2,699</option>
+      <option>Boots - Rs. 3,299</option>
+      <option>Sandals - Rs. 1,299</option>
+      <option>Everyday Comfort - Rs. 1,899</option>
+    </select>
+
+    <label for="size">Shoe Size</label>
+    <input id="size" required placeholder="Enter shoe size">
+
+    <label for="quantity">Quantity</label>
+    <input id="quantity" type="number" min="1" value="1" required>
+
+    <label for="payment">Payment Method</label>
+    <select id="payment">
+      <option>Cash on Delivery (COD)</option>
+    </select>
+
+    <label for="notes">Additional Instructions (Optional)</label>
+    <textarea id="notes" placeholder="Colour or other preferences"></textarea>
+
+    <button class="btn" type="submit">Confirm Order on WhatsApp</button>
+    <p class="notice">Your WhatsApp app will open with the order details. The shop must reply to confirm your order. Prices and stock should be confirmed before payment or dispatch.</p>
+  </form>
+</section>
+
+<section id="reviews" style="background:#f3eee2">
+  <div class="heading">
+    <h2>Customer Reviews & Comments</h2>
+    <p>Share your feedback about AJ Shoes.</p>
+  </div>
+
+  <form id="reviewForm">
+    <label for="reviewName">Your Name</label>
+    <input id="reviewName" required placeholder="Enter your name">
+    <label for="rating">Your Rating</label>
+    <select id="rating">
+      <option value="5">★★★★★ - Excellent</option>
+      <option value="4">★★★★☆ - Very Good</option>
+      <option value="3">★★★☆☆ - Good</option>
+      <option value="2">★★☆☆☆ - Fair</option>
+      <option value="1">★☆☆☆☆ - Poor</option>
+    </select>
+    <label for="reviewText">Your Comment</label>
+    <textarea id="reviewText" required maxlength="500" placeholder="Write your review here..."></textarea>
+    <button class="btn" type="submit">Post Review</button>
+    <p class="notice">Demo note: reviews are stored only in this browser session and may disappear when the page is closed. Public reviews for all visitors require a database or review service.</p>
+  </form>
+
+  <div id="reviewsList">
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <b>Welcome to AJ Shoes!</b>
+      <p>We look forward to hearing about your shopping experience.</p>
+      <span class="small">Store message</span>
+    </div>
+  </div>
 </section>
 
 <section id="contact">
-<div class="heading"><small>LET'S CONNECT</small><h2>Follow AJ Shoes</h2><p>Connect with us on social media or contact us for orders.</p></div>
-<div class="socials">
- <a class="social fb" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
- <a class="social ig" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
- <a class="social yt" href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
- <a class="social tt" href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok">♪</a>
- <a class="social wa-icon" href="https://wa.me/923432752543" target="_blank" rel="noopener" aria-label="WhatsApp">☏</a>
-</div>
-<p class="note" style="text-align:center">سوشل میڈیا آئیکنز میں ابھی عمومی لنکس ہیں۔ اپنے اصل پیجز کے لنکس شامل کریں۔</p>
+  <div class="heading">
+    <h2>Connect With AJ Shoes</h2>
+    <p>Follow us and contact us for product details and orders.</p>
+  </div>
+  <div class="socials">
+    <a class="social" href="https://www.facebook.com/aqibjaved00000" target="_blank" rel="noopener">Facebook</a>
+    <a class="social" href="https://www.tiktok.com/@muhajir_0001" target="_blank" rel="noopener">TikTok</a>
+    <a class="social" href="https://www.youtube.com/@aqibjaved1732" target="_blank" rel="noopener">YouTube</a>
+    <a class="social" href="https://wa.me/923432752543" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
 </section>
+</main>
 
 <footer>
-<h2>AJ SHOES 👟</h2>
-<p>AQIB JAVED · PREMIUM FOOTWEAR</p>
-<p class="urdu" style="font-size:17px">آپ کا اعتماد، ہماری پہچان</p>
-<p>© <span id="year"></span> AJ Shoes Footwear. All Rights Reserved.</p>
+  <div class="logo" style="justify-content:center;margin-bottom:12px">
+    <span class="logo-mark">AJ</span><span>AJ SHOES</span>
+  </div>
+  <p>Style • Comfort • Quality</p>
+  <p>WhatsApp: +92 343 2752543</p>
+  <p>© 2026 AJ Shoes | Aqib Javed Shoes. All Rights Reserved.</p>
 </footer>
-<a class="wa-float" href="https://wa.me/923432752543" target="_blank" rel="noopener">☏ WhatsApp</a>
+
+<a class="whatsapp-float" href="https://wa.me/923432752543" target="_blank" rel="noopener">WhatsApp Order</a>
 
 <script>
-const WHATSAPP="923432752543";
+const WHATSAPP_NUMBER = "923432752543";
 
-const categories=[
- {id:"Men",name:"Men's Shoes",tag:"SMART & MODERN",img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80"},
- {id:"Ladies",name:"Ladies' Shoes",tag:"ELEGANT & CHIC",img:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80"},
- {id:"Kids",name:"Children's Shoes",tag:"LITTLE STEPS",img:"https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=700&q=80"},
- {id:"Sports",name:"Sports Shoes",tag:"MOVE WITH ENERGY",img:"https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=700&q=80"},
- {id:"Formal",name:"Formal Shoes",tag:"CLASSIC ELEGANCE",img:"https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=700&q=80"},
- {id:"Casual",name:"Casual Shoes",tag:"EVERYDAY STYLE",img:"https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=700&q=80"},
- {id:"Sandals",name:"Sandals & Slippers",tag:"LIGHT & RELAXED",img:"https://images.unsplash.com/photo-1603487742131-4160ec999306?auto=format&fit=crop&w=700&q=80"},
- {id:"Boots",name:"Boots",tag:"BOLD & DURABLE",img:"https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=700&q=80"},
- {id:"Sneakers",name:"Street Sneakers",tag:"URBAN LOOK",img:"https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=80"}
-];
-
-const items=[
-{name:"Classic Sport Runner",cat:"Men",price:2499,img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=650&q=80",desc:"Light sporty look with a casual silhouette.",use:"Walking, daily wear and relaxed outings."},
-{name:"Urban Casual Trainer",cat:"Men",price:2799,img:"https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=650&q=80",desc:"Versatile style for everyday outfits.",use:"Shopping, college and casual meetups."},
-{name:"Street Style Sneaker",cat:"Men",price:3199,img:"https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=650&q=80",desc:"Contemporary streetwear-inspired design.",use:"Weekend looks and everyday styling."},
-
-{name:"Elegant Ladies Heels",cat:"Ladies",price:2999,img:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=650&q=80",desc:"Elegant silhouette for a polished look.",use:"Parties, dinners and special occasions."},
-{name:"Ladies Everyday Flats",cat:"Ladies",price:1899,img:"https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=650&q=80",desc:"Easy-to-style flat footwear.",use:"Daily errands, work and casual wear."},
-{name:"Ladies Chic Sneaker",cat:"Ladies",price:2599,img:"https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=650&q=80",desc:"Modern sporty style with a fresh look.",use:"Walking, shopping and casual outfits."},
-
-{name:"Kids Colour Sneakers",cat:"Kids",price:1599,img:"https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=650&q=80",desc:"Playful style for little feet.",use:"Playtime, family outings and everyday wear."},
-{name:"Kids Everyday Shoes",cat:"Kids",price:1399,img:"https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=650&q=80",desc:"A casual choice for growing children.",use:"School trips and everyday activities; check school rules."},
-{name:"Kids Sport Style",cat:"Kids",price:1699,img:"https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=650&q=80",desc:"Sport-inspired design for active days.",use:"Playground and casual family outings."},
-
-{name:"Running Style Trainers",cat:"Sports",price:3299,img:"https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=650&q=80",desc:"Athletic look for movement and training.",use:"Walking and light workouts; check fit and support."},
-{name:"Performance Sneaker",cat:"Sports",price:3499,img:"https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=650&q=80",desc:"Sporty design with a dynamic profile.",use:"Gym or exercise if the shoe is suitable for your activity."},
-{name:"Active Day Shoes",cat:"Sports",price:2899,img:"https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=650&q=80",desc:"Sport-inspired everyday footwear.",use:"Daily walks and casual activewear."},
-
-{name:"Classic Formal Lace-Up",cat:"Formal",price:3599,img:"https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=650&q=80",desc:"Smart, polished formal styling.",use:"Office, interviews, weddings and formal events."},
-{name:"Classic Office Shoes",cat:"Formal",price:3299,img:"https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&fit=crop&w=650&q=80",desc:"Traditional style for a refined outfit.",use:"Business meetings and office wear."},
-{name:"Elegant Dress Footwear",cat:"Formal",price:3799,img:"https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&fit=crop&w=650&q=80",desc:"Dressy finish for special looks.",use:"Formal dinners, celebrations and ceremonies."},
-
-{name:"Everyday Casual Pair",cat:"Casual",price:2299,img:"https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=650&q=80",desc:"Simple style that pairs with daily outfits.",use:"Errands, travel and everyday activities."},
-{name:"Minimal Casual Sneaker",cat:"Casual",price:2499,img:"https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=650&q=80",desc:"Clean, easy-to-match casual design.",use:"Jeans, casual trousers and weekend wear."},
-{name:"Relaxed Weekend Shoes",cat:"Casual",price:2199,img:"https://images.unsplash.com/photo-1520256862855-398228c41684?auto=format&fit=crop&w=650&q=80",desc:"Laid-back style for everyday outfits.",use:"Casual meetups and relaxed outings."},
-
-{name:"Everyday Sandals",cat:"Sandals",price:1299,img:"https://images.unsplash.com/photo-1603487742131-4160ec999306?auto=format&fit=crop&w=650&q=80",desc:"Open footwear for a relaxed feel.",use:"Casual wear in suitable weather."},
-{name:"Comfort Slippers",cat:"Sandals",price:899,img:"https://images.unsplash.com/photo-1562273138-f46be4ebdf33?auto=format&fit=crop&w=650&q=80",desc:"Simple slip-on style.",use:"Home and informal everyday use."},
-{name:"Strap Sandals",cat:"Sandals",price:1499,img:"https://images.unsplash.com/photo-1531310197839-ccf54634509e?auto=format&fit=crop&w=650&q=80",desc:"Easygoing strap design.",use:"Casual outings; check grip and fit."},
-
-{name:"Classic Ankle Boots",cat:"Boots",price:3999,img:"https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=650&q=80",desc:"Bold ankle-height look.",use:"Cooler weather and casual outfits."},
-{name:"Leather-Look Boots",cat:"Boots",price:4299,img:"https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=650&q=80",desc:"Structured style with a rugged appearance.",use:"Casual outings; check material and sole details."},
-{name:"Everyday Utility Boots",cat:"Boots",price:3799,img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=650&q=80",desc:"Boot-inspired look for bold outfits.",use:"Lifestyle wear, not a substitute for safety boots."},
-
-{name:"Premium Street Sneaker",cat:"Sneakers",price:3199,img:"https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=650&q=80",desc:"Contemporary streetwear profile.",use:"Daily outfits and casual gatherings."},
-{name:"Classic White Sneaker",cat:"Sneakers",price:2799,img:"https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=650&q=80",desc:"A versatile sneaker look.",use:"Casual wear, college and weekend outings."},
-{name:"Modern Everyday Sneaker",cat:"Sneakers",price:2999,img:"https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=650&q=80",desc:"Modern design for a relaxed look.",use:"Everyday casual outfits and travel."}
-];
-
-const categoryGrid=document.getElementById("categoryGrid");
-categories.forEach(c=>{
- const card=document.createElement("article");
- card.className="category";
- const img=document.createElement("img");img.loading="lazy";img.src=c.img;img.alt=c.name;
- const text=document.createElement("div");text.className="cattext";
- const small=document.createElement("small");small.textContent=c.tag;
- const h=document.createElement("h3");h.textContent=c.name;
- const a=document.createElement("a");a.href="#collection";a.textContent="EXPLORE COLLECTION →";
- a.addEventListener("click",()=>setFilter(c.id));
- text.append(small,h,a);card.append(img,text);categoryGrid.append(card);
-});
-
-const filters=document.getElementById("filters");
-const allButton=document.createElement("button");allButton.className="filter active";allButton.textContent="All Shoes";
-allButton.onclick=()=>setFilter("All");filters.append(allButton);
-categories.forEach(c=>{
- const b=document.createElement("button");b.className="filter";b.textContent=c.name;
- b.onclick=()=>setFilter(c.id);filters.append(b);
-});
-
-function setFilter(cat){
- filters.querySelectorAll(".filter").forEach(b=>{
-  b.classList.toggle("active",cat==="All"?b.textContent==="All Shoes":b.textContent===cat||b.textContent===categories.find(c=>c.id===cat)?.name);
- });
- render(cat);
+function orderProduct(product) {
+  document.getElementById("product").value = product;
+  document.getElementById("order").scrollIntoView({behavior:"smooth"});
 }
-function render(cat="All"){
- const box=document.getElementById("products");box.replaceChildren();
- items.filter(p=>cat==="All"||p.cat===cat).forEach(p=>{
-  const card=document.createElement("article");card.className="product";
-  const img=document.createElement("img");img.loading="lazy";img.src=p.img;img.alt=p.name;
-  const info=document.createElement("div");info.className="info";
-  const tag=document.createElement("div");tag.className="tag";tag.textContent=p.cat.toUpperCase();
-  const h=document.createElement("h3");h.textContent=p.name;
-  const desc=document.createElement("p");desc.textContent=p.desc;
-  const suitable=document.createElement("div");suitable.className="suitable";suitable.textContent="Suitable for: "+p.use;
-  const buy=document.createElement("div");buy.className="buy";
-  const price=document.createElement("strong");price.textContent="Sample Rs. "+p.price.toLocaleString("en-PK");
-  const button=document.createElement("button");button.type="button";button.textContent="ORDER NOW";
-  button.onclick=()=>{document.getElementById("shoe").value=p.name;document.getElementById("order").scrollIntoView({behavior:"smooth"});};
-  buy.append(price,button);info.append(tag,h,desc,suitable,buy);card.append(img,info);box.append(card);
- });
-}
-render();
 
-const shoeSelect=document.getElementById("shoe");
-items.forEach(p=>{const o=document.createElement("option");o.value=p.name;o.textContent=p.name+" — sample Rs. "+p.price.toLocaleString("en-PK");shoeSelect.append(o)});
+document.getElementById("orderForm").addEventListener("submit", function(event) {
+  event.preventDefault();
 
-document.getElementById("year").textContent=new Date().getFullYear();
-document.getElementById("orderform").addEventListener("submit",e=>{
- e.preventDefault();
- const p=items.find(x=>x.name===shoeSelect.value);
- if(!p){alert("Please select a shoe.");return;}
- const q=Number(document.getElementById("qty").value);
- const message=`AJ SHOES — ORDER REQUEST\nName: ${document.getElementById("customer").value}\nPhone: ${document.getElementById("phone").value}\nProduct: ${p.name}\nCategory: ${p.cat}\nSize: ${document.getElementById("size").value}\nQuantity: ${q}\nSample price: Rs. ${p.price*q}\nPayment: Cash on Delivery\nAddress: ${document.getElementById("address").value}\nPlease confirm actual stock, final price, delivery charges and COD availability.`;
- window.open("https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(message),"_blank");
+  const name = document.getElementById("customer").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const address = document.getElementById("address").value.trim();
+  const product = document.getElementById("product").value;
+  const size = document.getElementById("size").value.trim();
+  const quantity = document.getElementById("quantity").value;
+  const payment = document.getElementById("payment").value;
+  const notes = document.getElementById("notes").value.trim();
+
+  const message =
+    "AJ SHOES - NEW ORDER%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Phone: " + encodeURIComponent(phone) + "%0A" +
+    "Address: " + encodeURIComponent(address) + "%0A" +
+    "Product: " + encodeURIComponent(product) + "%0A" +
+    "Shoe Size: " + encodeURIComponent(size) + "%0A" +
+    "Quantity: " + encodeURIComponent(quantity) + "%0A" +
+    "Payment: " + encodeURIComponent(payment) + "%0A" +
+    "Instructions: " + encodeURIComponent(notes);
+
+  window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + message, "_blank");
 });
 
-document.getElementById("reviewform").addEventListener("submit",e=>{
- e.preventDefault();
- const name=document.getElementById("reviewname").value.trim();
- const comment=document.getElementById("reviewtext").value.trim();
- const rating=Number(document.getElementById("rating").value);
- if(!name||!comment)return;
- const card=document.createElement("div");card.className="review";
- const stars=document.createElement("div");stars.className="stars";stars.textContent="★".repeat(rating)+"☆".repeat(5-rating);
- const p=document.createElement("p");p.textContent=comment;
- const strong=document.createElement("strong");strong.textContent=name;
- card.append(stars,p,strong);document.getElementById("reviewlist").prepend(card);
- e.target.reset();alert("Thank you! Your review is shown for this session.");
+document.getElementById("reviewForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("reviewName").value.trim();
+  const rating = Number(document.getElementById("rating").value);
+  const comment = document.getElementById("reviewText").value.trim();
+
+  if (!name || !comment) return;
+
+  const review = document.createElement("div");
+  review.className = "review";
+
+  const stars = document.createElement("div");
+  stars.className = "stars";
+  stars.textContent = "★".repeat(rating) + "☆".repeat(5 - rating);
+
+  const heading = document.createElement("b");
+  heading.textContent = name;
+
+  const paragraph = document.createElement("p");
+  paragraph.textContent = comment;
+
+  const date = document.createElement("span");
+  date.className = "small";
+  date.textContent = new Date().toLocaleDateString();
+
+  review.append(stars, heading, paragraph, date);
+  document.getElementById("reviewsList").prepend(review);
+
+  document.getElementById("reviewForm").reset();
 });
 </script>
 </body>
