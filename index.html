@@ -1,296 +1,1054 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ur" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AJ Shoes | Aqib Javed Premium Footwear</title>
-<meta name="description" content="Explore AJ Shoes by Aqib Javed: sneakers, sports shoes, formal footwear, ladies shoes and kids shoes.">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shaikh Yousaf | Official</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
 <style>
-:root{
- --green:#123c2b;--green2:#235b42;--gold:#c9a45c;
- --cream:#faf6ed;--white:#fffdf8;--ink:#29251e;--muted:#766f62;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--cream);color:var(--ink);font-family:Poppins,Arial,sans-serif}
-a{text-decoration:none;color:inherit}
-button,input,select,textarea{font:inherit}
-.topbar{background:var(--green);color:#f1dba9;text-align:center;padding:9px;font-size:10px;letter-spacing:2px}
-header{position:sticky;top:0;z-index:20;background:#fffdf8ed;backdrop-filter:blur(12px);border-bottom:1px solid #e6d9c2}
-nav{max-width:1250px;margin:auto;padding:12px 5%;display:flex;align-items:center;justify-content:space-between;gap:15px}
-.brand{display:flex;align-items:center;gap:11px}
-.logo{height:59px;width:59px;border:2px solid var(--gold);border-radius:50%;background:var(--green);color:#f3d48d;display:grid;place-items:center;position:relative;box-shadow:0 4px 15px #123c2b25}
-.logo b{font:800 24px Georgia}
-.logo span{position:absolute;bottom:-5px;right:-5px;background:var(--gold);border:2px solid var(--white);border-radius:50%;width:25px;height:25px;display:grid;place-items:center;font-size:13px}
-.brand h2{font:800 21px 'Playfair Display',serif;color:var(--green);margin:0}
-.brand small{font-size:9px;letter-spacing:2px;color:#9c773e}
-.links{display:flex;align-items:center;gap:17px;font-size:11px;font-weight:600}
-.links a:hover{color:#a47c39}
-.btn{display:inline-block;background:var(--green);color:white;padding:13px 20px;border:1px solid var(--green);font-size:11px;font-weight:700;transition:.25s;cursor:pointer}
-.btn:hover{background:var(--gold);border-color:var(--gold);color:#1e2b20;transform:translateY(-2px)}
-.btn.gold{background:var(--gold);border-color:var(--gold);color:#1e2b20}
-.hero{background:linear-gradient(120deg,#f7edda,#e5d5b7);overflow:hidden}
-.hero-inner{max-width:1250px;margin:auto;min-height:490px;padding:50px 7%;display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}
-.eyebrow{font-size:10px;letter-spacing:4px;color:#9b7539;font-weight:700}
-.hero h1{font:700 clamp(40px,5.5vw,69px)/1.1 'Playfair Display',serif;color:var(--green);margin:17px 0}
-.hero h1 em{color:#b18a4c}
-.hero p{font-size:13px;line-height:2;color:#665b4c;max-width:480px}
-.urdu{font-family:'Noto Nastaliq Urdu',serif;direction:rtl}
-.hero .urdu{font-size:18px;color:var(--green);margin:15px 0}
-.orbit-stage{height:365px;position:relative;display:grid;place-items:center}
-.orbit-ring{width:min(330px,75vw);height:min(330px,75vw);max-width:330px;max-height:330px;border:2px dashed #b7955c;border-radius:50%;position:absolute;animation:spin 24s linear infinite}
-.orbit-ring:before{content:"";position:absolute;inset:16px;border:1px solid #c9a45c77;border-radius:50%}
-.orbit-shoe{width:100px;height:100px;object-fit:cover;border-radius:50%;border:5px solid var(--white);position:absolute;box-shadow:0 8px 25px #1c34252b}
-.orbit-shoe.one{top:-12px;left:calc(50% - 50px)}
-.orbit-shoe.two{bottom:5px;right:-12px}
-.orbit-shoe.three{bottom:5px;left:-12px}
-.orbit-center{width:150px;height:150px;border-radius:50%;background:var(--green);border:5px double var(--gold);display:flex;align-items:center;justify-content:center;flex-direction:column;color:#f2d48d;box-shadow:0 15px 40px #123c2b2a;z-index:2}
-.orbit-center b{font:800 44px Georgia}
-.orbit-center small{font-size:9px;letter-spacing:3px}
-@keyframes spin{to{transform:rotate(360deg)}}
-.hero-note{position:absolute;bottom:0;font-size:10px;letter-spacing:2px;color:#836b48}
-.benefits{display:grid;grid-template-columns:repeat(3,1fr);background:#fff;padding:20px 5%;text-align:center}
-.benefits div{border-right:1px solid #e8decd;font-size:12px;font-weight:600;color:var(--green)}
-.benefits div:last-child{border:0}
-.benefits span{display:block;color:var(--muted);font-size:10px;font-weight:400;margin-top:5px}
-section{max-width:1300px;margin:auto;padding:65px 5%}
-.heading{text-align:center;margin-bottom:30px}
-.heading small{color:#a78346;letter-spacing:4px;font-size:10px;font-weight:700}
-.heading h2{font:700 clamp(29px,4vw,43px) 'Playfair Display',serif;color:var(--green);margin:10px 0}
-.heading p{font-size:12px;color:var(--muted);line-height:1.9}
-.heading .urdu{font-size:17px;color:var(--green)}
-.category-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.category{height:290px;position:relative;overflow:hidden;background:#e8dcc9;border-radius:5px}
-.category img{width:100%;height:100%;object-fit:cover;transition:.6s}
-.category:hover img{transform:scale(1.08)}
-.category:after{content:"";position:absolute;inset:30% 0 0;background:linear-gradient(transparent,#101c16e8)}
-.cattext{position:absolute;bottom:20px;left:20px;right:15px;z-index:2;color:white}
-.cattext small{font-size:9px;letter-spacing:2px;color:#f1d48e}
-.cattext h3{font:700 28px Georgia;margin:8px 0}
-.cattext a{font-size:10px;border-bottom:1px solid #e6ca8c;padding-bottom:4px}
-.collection{background:#fffdf8;max-width:none}
-.collection section{max-width:1300px}
-.filters{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin:25px 0}
-.filter{background:transparent;border:1px solid #d9c7aa;color:var(--green);padding:9px 15px;font-size:10px;cursor:pointer}
-.filter.active,.filter:hover{background:var(--green);color:white}
-.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.product{background:var(--cream);border:1px solid #eee2d0;min-width:0;transition:.25s}
-.product:hover{transform:translateY(-4px);box-shadow:0 10px 25px #123c2b12}
-.product img{display:block;width:100%;height:225px;object-fit:cover;background:#eee}
-.info{padding:15px}
-.tag{font-size:9px;letter-spacing:2px;color:#a17c40;font-weight:700}
-.info h3{font:700 20px Georgia;color:var(--green);margin:9px 0}
-.info p{font-size:11px;line-height:1.8;color:var(--muted);margin:7px 0}
-.suitable{font-size:10px;color:#4d6656;background:#eaf0e8;padding:9px;margin:10px 0;line-height:1.8}
-.buy{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px}
-.buy strong{font-size:13px;color:var(--green)}
-.buy button{background:var(--green);color:white;border:0;padding:10px;font-size:10px;cursor:pointer}
-.buy button:hover{background:var(--gold);color:#17271c}
-.promo{max-width:none;background:var(--green);color:white;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center;padding:60px 8%}
-.promo h2{font:700 43px 'Playfair Display',serif;color:#f0d18c;margin:12px 0}
-.promo p{font-size:12px;line-height:2;color:#e1e9e1}
-.promo img{width:100%;height:300px;object-fit:cover;border:5px solid #ffffff1c}
-.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
-.review{background:white;border:1px solid #eadfce;padding:20px}
-.stars{color:#b58b50;letter-spacing:3px}
-.review p{font-size:11px;line-height:1.9;color:#67594c}
-.formbox{max-width:680px;margin:25px auto 0;padding:25px;background:white;border:1px solid #eadfce}
-.formbox h3{font:700 26px Georgia;color:var(--green);margin:0 0 18px}
-.field{width:100%;padding:12px;margin:7px 0 13px;border:1px solid #dfd1bd;background:#fffdf8;font-size:12px;border-radius:2px}
-textarea.field{min-height:85px}
-.formrow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-label{font-size:10px;font-weight:600;color:var(--green)}
-.formbox .btn{width:100%}
-.note{font-size:10px;color:var(--muted);line-height:1.8;margin-top:12px}
-.socials{display:flex;justify-content:center;gap:13px;flex-wrap:wrap;margin:25px 0}
-.social{width:49px;height:49px;border-radius:50%;display:grid;place-items:center;color:white;font-size:20px;font-weight:800;box-shadow:0 5px 14px #123c2b19;transition:.25s}
-.social:hover{transform:translateY(-5px) scale(1.06)}
-.fb{background:#1877f2}.yt{background:#e62117}.tt{background:#171717;border:1px solid var(--gold)}.wa-icon{background:#168c54}.ig{background:linear-gradient(35deg,#feda75,#d62976,#962fbf,#4f5bd5)}
-footer{background:#102a20;color:#f7ead8;text-align:center;padding:35px 15px;border-top:3px solid var(--gold)}
-footer h2{font:700 30px Georgia;color:#d5b27c;margin:0 0 10px}
-footer p{font-size:10px;color:#d6c4ad;line-height:2}
-.wa-float{position:fixed;right:15px;bottom:15px;background:#168c54;color:white;border-radius:30px;padding:13px 17px;font-size:11px;font-weight:700;z-index:30;box-shadow:0 5px 20px #0003}
-@media(max-width:800px){
- nav{padding:10px 3%;flex-wrap:wrap}
- .brand h2{font-size:18px}.logo{width:49px;height:49px}
- .links{width:100%;justify-content:center;gap:13px;flex-wrap:wrap;font-size:10px}
- .hero-inner{grid-template-columns:1fr;padding:40px 7%;gap:10px}
- .orbit-stage{height:325px}
- .benefits{padding:17px 2%}.benefits div{font-size:10px}
- .category-grid{grid-template-columns:1fr 1fr}
- .category{height:260px}
- .products{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
- .product img{height:165px}.info{padding:11px}.info h3{font-size:17px}
- .buy{align-items:flex-start;flex-direction:column}.buy button{width:100%}
- .promo{grid-template-columns:1fr;padding:40px 7%}.promo h2{font-size:35px}
- .reviews{grid-template-columns:1fr}
- section{padding:45px 5%}
+
+html{
+scroll-behavior:smooth;
 }
-@media(max-width:420px){
- .category-grid{grid-template-columns:1fr}
- .category{height:280px}
- .brand h2{font-size:16px}.brand small{letter-spacing:1px;font-size:8px}
- .orbit-shoe{width:82px;height:82px}
- .orbit-center{width:130px;height:130px}
- .orbit-center b{font-size:37px}
- .formrow{grid-template-columns:1fr;gap:0}
+
+body{
+background:#080b0f;
+color:#fff;
+font-family:"Noto Naskh Arabic",serif;
+overflow-x:hidden;
 }
+
+/* BACKGROUND */
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+z-index:-2;
+background:
+radial-gradient(circle at 15% 20%,rgba(214,181,109,.14),transparent 28%),
+radial-gradient(circle at 85% 70%,rgba(70,100,150,.12),transparent 30%);
+}
+
+body::after{
+content:"";
+position:fixed;
+width:500px;
+height:500px;
+border-radius:50%;
+border:1px solid rgba(214,181,109,.08);
+right:-250px;
+top:20%;
+z-index:-1;
+animation:rotateOrb 18s linear infinite;
+}
+
+@keyframes rotateOrb{
+from{transform:rotate(0deg)}
+to{transform:rotate(360deg)}
+}
+
+/* NAV */
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:70px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 7%;
+background:rgba(5,7,10,.72);
+backdrop-filter:blur(18px);
+border-bottom:1px solid rgba(255,255,255,.07);
+z-index:999;
+}
+
+.logo{
+font-family:"Playfair Display",serif;
+direction:ltr;
+font-size:19px;
+letter-spacing:3px;
+color:#e8cd8a;
+}
+
+nav a{
+color:#ddd;
+text-decoration:none;
+margin-left:22px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#e8cd8a;
+}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+padding:150px 8% 80px;
+display:flex;
+align-items:center;
+position:relative;
+}
+
+.hero-content{
+max-width:850px;
+animation:heroIn 1.3s ease both;
+}
+
+@keyframes heroIn{
+from{
+opacity:0;
+transform:translateY(45px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.small-title{
+font-family:"Playfair Display",serif;
+direction:ltr;
+letter-spacing:4px;
+font-size:13px;
+color:#e8cd8a;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-family:"Playfair Display",serif;
+direction:ltr;
+font-size:clamp(55px,10vw,120px);
+line-height:.9;
+letter-spacing:-4px;
+}
+
+.hero h1 span{
+color:#e8cd8a;
+}
+
+.hero h2{
+font-size:42px;
+font-weight:500;
+margin-top:25px;
+animation:textFloat 3s ease-in-out infinite;
+}
+
+@keyframes textFloat{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-6px)}
+}
+
+.hero p{
+max-width:650px;
+color:#adb3bb;
+font-size:19px;
+margin-top:20px;
+line-height:2;
+}
+
+.buttons{
+margin-top:32px;
+display:flex;
+gap:14px;
+flex-wrap:wrap;
+}
+
+.btn{
+text-decoration:none;
+padding:12px 28px;
+border-radius:50px;
+transition:.35s;
+}
+
+.primary{
+background:#e8cd8a;
+color:#111;
+}
+
+.primary:hover{
+transform:translateY(-5px) scale(1.03);
+box-shadow:0 15px 35px rgba(232,205,138,.2);
+}
+
+.outline{
+border:1px solid rgba(255,255,255,.25);
+color:#fff;
+}
+
+.outline:hover{
+border-color:#e8cd8a;
+color:#e8cd8a;
+transform:translateY(-5px);
+}
+
+/* FLOATING LIGHT */
+
+.light{
+position:absolute;
+width:12px;
+height:12px;
+border-radius:50%;
+background:#e8cd8a;
+filter:blur(2px);
+opacity:.5;
+animation:float 5s ease-in-out infinite;
+}
+
+.light.one{
+right:20%;
+top:30%;
+}
+
+.light.two{
+right:35%;
+top:70%;
+animation-delay:1s;
+}
+
+.light.three{
+left:15%;
+top:25%;
+animation-delay:2s;
+}
+
+@keyframes float{
+0%,100%{
+transform:translateY(0);
+opacity:.25;
+}
+50%{
+transform:translateY(-30px);
+opacity:.8;
+}
+}
+
+/* SECTIONS */
+
+section{
+padding:110px 7%;
+}
+
+.section-title{
+text-align:center;
+max-width:750px;
+margin:0 auto 55px;
+}
+
+.section-title small{
+font-family:"Playfair Display",serif;
+direction:ltr;
+letter-spacing:3px;
+color:#e8cd8a;
+}
+
+.section-title h2{
+font-size:48px;
+margin-top:8px;
+}
+
+.section-title p{
+color:#aeb4bb;
+font-size:17px;
+margin-top:10px;
+}
+
+/* REVEAL */
+
+.reveal{
+opacity:0;
+transform:translateY(50px);
+transition:1s ease;
+}
+
+.reveal.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* STORY */
+
+.story{
+max-width:950px;
+margin:auto;
+background:linear-gradient(135deg,#151a20,#0d1115);
+border:1px solid rgba(232,205,138,.2);
+border-radius:30px;
+padding:45px;
+box-shadow:0 30px 80px rgba(0,0,0,.25);
+}
+
+.story h3{
+color:#e8cd8a;
+font-size:30px;
+margin-bottom:15px;
+}
+
+.story p{
+color:#c2c7cd;
+font-size:18px;
+line-height:2.1;
+margin-bottom:14px;
+}
+
+/* PEOPLE */
+
+.people{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.card{
+background:#11161c;
+border:1px solid rgba(255,255,255,.07);
+border-radius:26px;
+overflow:hidden;
+transition:.5s;
+}
+
+.card:hover{
+transform:translateY(-12px);
+border-color:rgba(232,205,138,.4);
+box-shadow:0 25px 55px rgba(0,0,0,.4);
+}
+
+.photo{
+height:400px;
+overflow:hidden;
+background:#161b20;
+}
+
+.photo img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+transition:1s cubic-bezier(.2,.7,.2,1);
+}
+
+.card:hover .photo img{
+transform:scale(1.09);
+}
+
+.info{
+padding:23px;
+}
+
+.info h3{
+font-size:28px;
+color:#e8cd8a;
+}
+
+.info span{
+color:#858b93;
+font-size:14px;
+}
+
+.info p{
+color:#b8bec5;
+margin-top:8px;
+}
+
+/* TIMELINE */
+
+.timeline{
+max-width:900px;
+margin:auto;
+position:relative;
+}
+
+.timeline::before{
+content:"";
+position:absolute;
+right:20px;
+top:0;
+bottom:0;
+width:1px;
+background:linear-gradient(#e8cd8a,transparent);
+}
+
+.item{
+position:relative;
+padding-right:65px;
+padding-bottom:45px;
+}
+
+.dot{
+position:absolute;
+right:12px;
+top:7px;
+width:17px;
+height:17px;
+border-radius:50%;
+background:#e8cd8a;
+box-shadow:0 0 0 7px rgba(232,205,138,.1);
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+0%,100%{
+box-shadow:0 0 0 7px rgba(232,205,138,.1);
+}
+50%{
+box-shadow:0 0 0 13px rgba(232,205,138,.03);
+}
+}
+
+.item h3{
+font-size:25px;
+color:#e8cd8a;
+}
+
+.item p{
+color:#aeb4bb;
+font-size:17px;
+}
+
+/* FEATURE */
+
+.feature{
+max-width:1100px;
+margin:auto;
+padding:70px;
+border-radius:35px;
+background:
+linear-gradient(120deg,rgba(232,205,138,.12),rgba(255,255,255,.025)),
+#11161b;
+border:1px solid rgba(232,205,138,.2);
+overflow:hidden;
+position:relative;
+}
+
+.feature::after{
+content:"";
+position:absolute;
+width:300px;
+height:300px;
+border-radius:50%;
+border:1px solid rgba(232,205,138,.12);
+right:-100px;
+top:-100px;
+animation:rotateOrb 15s linear infinite;
+}
+
+.feature h2{
+font-family:"Playfair Display",serif;
+direction:ltr;
+font-size:60px;
+line-height:1.1;
+}
+
+.feature p{
+max-width:750px;
+color:#b9bec5;
+font-size:18px;
+margin-top:18px;
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.gallery-box{
+height:450px;
+border-radius:25px;
+overflow:hidden;
+background:#12171c;
+}
+
+.gallery-box img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:1s;
+}
+
+.gallery-box:hover img{
+transform:scale(1.1);
+}
+
+/* LETTER */
+
+.letter{
+max-width:900px;
+margin:auto;
+padding:55px;
+background:#f0e9da;
+color:#29251f;
+border-radius:12px;
+box-shadow:0 30px 70px rgba(0,0,0,.3);
+position:relative;
+}
+
+.letter::before{
+content:"";
+position:absolute;
+inset:14px;
+border:1px solid rgba(70,50,25,.18);
+pointer-events:none;
+}
+
+.letter h2{
+font-size:35px;
+color:#604b2b;
+margin-bottom:20px;
+}
+
+.letter p{
+font-size:19px;
+line-height:2.1;
+margin-bottom:12px;
+}
+
+/* DUA */
+
+.dua{
+text-align:center;
+background:radial-gradient(circle,rgba(232,205,138,.1),transparent 55%);
+}
+
+.dua h2{
+font-size:55px;
+}
+
+.dua p{
+max-width:800px;
+margin:15px auto;
+color:#bdc2c8;
+font-size:20px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:55px 7%;
+border-top:1px solid rgba(255,255,255,.07);
+color:#777;
+}
+
+.footer-logo{
+font-family:"Playfair Display",serif;
+direction:ltr;
+font-size:25px;
+color:#e8cd8a;
+margin-bottom:8px;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+nav{
+padding:0 5%;
+}
+
+nav div:last-child{
+display:none;
+}
+
+.hero{
+padding:125px 6% 70px;
+}
+
+.hero h1{
+font-size:58px;
+letter-spacing:-2px;
+}
+
+.hero h2{
+font-size:30px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+section{
+padding:80px 6%;
+}
+
+.section-title h2{
+font-size:38px;
+}
+
+.people{
+grid-template-columns:1fr;
+}
+
+.gallery{
+grid-template-columns:1fr;
+}
+
+.photo{
+height:430px;
+}
+
+.gallery-box{
+height:430px;
+}
+
+.story{
+padding:28px;
+}
+
+.feature{
+padding:40px 28px;
+}
+
+.feature h2{
+font-size:42px;
+}
+
+.letter{
+padding:35px 25px;
+}
+
+.dua h2{
+font-size:40px;
+}
+
+}
+
 </style>
 </head>
-<body>
-<div class="topbar">✦ PREMIUM FOOTWEAR · STYLE · COMFORT · QUALITY ✦</div>
 
-<header>
+<body>
+
 <nav>
-<a class="brand" href="#home">
- <div class="logo"><b>AJ</b><span>👟</span></div>
- <div><h2>AQIB JAVED</h2><small>AJ SHOES · PREMIUM FOOTWEAR</small></div>
-</a>
-<div class="links">
- <a href="#home">Home</a><a href="#categories">Categories</a>
- <a href="#collection">Collection</a><a href="#reviews">Reviews</a>
- <a class="btn" href="#order">ORDER NOW</a>
+
+<div class="logo">
+SHAIKH YOUSAF
 </div>
+
+<div>
+<a href="#story">کہانی</a>
+<a href="#family">خاندان</a>
+<a href="#journey">سفر</a>
+<a href="#gallery">تصاویر</a>
+</div>
+
 </nav>
+
+
+<div class="light one"></div>
+<div class="light two"></div>
+<div class="light three"></div>
+
+
+<header class="hero">
+
+<div class="hero-content">
+
+<div class="small-title">
+AN ORDINARY LIFE • A BEAUTIFUL JOURNEY
+</div>
+
+<h1>
+SHAIKH<br>
+<span>YOUSAF</span>
+</h1>
+
+<h2>
+شیخ یوسف
+</h2>
+
+<p>
+ایک سادہ انسان کی خوبصورت کہانی —
+محنت، خاندان، ہنر، امید اور بہتر مستقبل کے خوابوں کا سفر۔
+</p>
+
+<div class="buttons">
+
+<a href="#story" class="btn primary">
+کہانی پڑھیں
+</a>
+
+<a href="#gallery" class="btn outline">
+تصاویر دیکھیں
+</a>
+
+</div>
+
+</div>
+
 </header>
 
-<div class="hero" id="home">
-<div class="hero-inner">
- <div>
-  <div class="eyebrow">THE ART OF PREMIUM FOOTWEAR</div>
-  <h1>Walk With<br><em>Confidence.</em></h1>
-  <p>Discover shoes for every style, every occasion and every step. Explore the AJ Shoes collection for the whole family.</p>
-  <p class="urdu">ہر قدم پر اسٹائل، ہر قدم پر اعتماد</p>
-  <a class="btn gold" href="#categories">EXPLORE COLLECTION →</a>
-  <a class="btn" href="#order">SHOP NOW</a>
- </div>
- <div class="orbit-stage">
-  <div class="orbit-ring">
-   <img class="orbit-shoe one" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=250&q=80" alt="Sport sneaker">
-   <img class="orbit-shoe two" src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80" alt="Ladies footwear">
-   <img class="orbit-shoe three" src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=250&q=80" alt="Kids footwear">
-  </div>
-  <div class="orbit-center"><b>AJ</b><small>SHOES</small><span style="font-size:23px">👟</span></div>
-  <div class="hero-note">STYLE · QUALITY · COMFORT</div>
- </div>
-</div>
+
+<section id="story">
+
+<div class="section-title reveal">
+
+<small>THE STORY</small>
+
+<h2>
+ایک خاموش سفر
+</h2>
+
+<p>
+کچھ کہانیاں شور سے نہیں بلکہ خاموش محنت سے لکھی جاتی ہیں۔
+</p>
+
 </div>
 
-<div class="benefits">
- <div>✦ Modern Designs<span>Styles for every look</span></div>
- <div>✧ Everyday Comfort<span>Find your perfect fit</span></div>
- <div>◇ Easy Ordering<span>WhatsApp order support</span></div>
+<div class="story reveal">
+
+<h3>
+شیخ یوسف کی کہانی
+</h3>
+
+<p>
+شیخ یوسف 2011 میں 3 چک ڈلے والا،
+تحصیل دریا خان، ضلع بھکر میں پیدا ہوئے۔
+ایک سادہ اور عزت دار خاندان میں پرورش پائی۔
+</p>
+
+<p>
+زندگی کے ابتدائی حالات ہمیشہ آسان نہیں تھے،
+لیکن مشکلات نے محنت، صبر اور سادگی کی قدر سکھائی۔
+</p>
+
+<p>
+آج یوسف ساتویں جماعت میں تعلیم حاصل کر رہے ہیں
+اور زندگی میں آگے بڑھنے کے خواب رکھتے ہیں۔
+</p>
+
 </div>
 
-<section id="categories">
-<div class="heading">
- <small>FIND YOUR PERFECT PAIR</small><h2>Shop By Category</h2>
- <p>Explore our footwear range by style and occasion.</p>
- <p class="urdu">اپنی پسند اور ضرورت کے مطابق جوتے منتخب کریں</p>
-</div>
-<div class="category-grid" id="categoryGrid"></div>
 </section>
 
-<div class="collection" id="collection"><section>
-<div class="heading">
- <small>THE AJ SHOE EDIT</small><h2>Our Shoe Collection</h2>
- <p>Browse styles, learn where they fit best, and ask us about sizes and availability.</p>
-</div>
-<div class="filters" id="filters"></div>
-<div class="products" id="products"></div>
-<p class="note">تصاویر مثال کے طور پر ہیں۔ قیمت، سائز، دستیابی اور اصل پروڈکٹ آرڈر سے پہلے WhatsApp پر تصدیق کریں۔</p>
-</section></div>
 
-<div class="promo">
- <div><div class="eyebrow">THE AJ DIFFERENCE</div>
- <h2>Every Step.<br>Every Occasion.</h2>
- <p>From sporty sneakers to elegant formal shoes, discover a style that matches your day.</p>
- <p class="urdu" style="font-size:18px">ہر موقع کے لیے بہترین انداز</p>
- <a class="btn gold" href="#order">PLACE YOUR ORDER →</a></div>
- <img loading="lazy" src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=900&q=85" alt="Footwear collection">
+<section id="family">
+
+<div class="section-title reveal">
+
+<small>PEOPLE</small>
+
+<h2>
+اس سفر کے لوگ
+</h2>
+
+<p>
+وہ لوگ جن کی محنت اور موجودگی اس کہانی کا حصہ ہے۔
+</p>
+
 </div>
 
-<section id="reviews">
-<div class="heading"><small>YOUR WORDS MATTER</small><h2>Customer Reviews</h2><p>Share your feedback with AJ Shoes.</p></div>
-<div class="reviews" id="reviewlist">
- <div class="review"><div class="stars">★★★★★</div><p>Sample design preview. Replace with genuine customer feedback.</p><strong>Sample Review</strong></div>
+
+<div class="people">
+
+<div class="card reveal">
+
+<div class="photo">
+<img src="yousaf-8.jpg" alt="Shaikh Yousaf">
 </div>
-<form class="formbox" id="reviewform">
- <h3>Write a Review</h3>
- <label for="reviewname">Your Name</label><input class="field" id="reviewname" required placeholder="Enter your name">
- <label for="rating">Your Rating</label>
- <select class="field" id="rating"><option value="5">★★★★★ Excellent</option><option value="4">★★★★☆ Very Good</option><option value="3">★★★☆☆ Good</option><option value="2">★★☆☆☆ Fair</option><option value="1">★☆☆☆☆ Poor</option></select>
- <label for="reviewtext">Your Comment</label><textarea class="field" id="reviewtext" required placeholder="Write your feedback"></textarea>
- <button class="btn" type="submit">SUBMIT REVIEW</button>
- <p class="note">Reviews added here stay in this browser session only; permanent public reviews need a database.</p>
-</form>
+
+<div class="info">
+
+<h3>Yousaf</h3>
+
+<span>شیخ یوسف</span>
+
+<p>
+سادگی، خاموشی اور بڑے خواب۔
+</p>
+
+</div>
+
+</div>
+
+
+<div class="card reveal">
+
+<div class="photo">
+<img src="mudassir-5.jpg" alt="Mudassir">
+</div>
+
+<div class="info">
+
+<h3>Mudassir</h3>
+
+<span>مدثر</span>
+
+<p>
+محنت اور ذمہ داری کو زندگی کا حصہ بنانے والا بھائی۔
+</p>
+
+</div>
+
+</div>
+
+
+<div class="card reveal">
+
+<div class="photo">
+<img src="ustad-7.jpg" alt="Ustad">
+</div>
+
+<div class="info">
+
+<h3>Ustad</h3>
+
+<span>استاد</span>
+
+<p>
+ہنر سکھانے اور راستہ دکھانے والا شخص۔
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<section id="order">
-<div class="heading"><small>QUICK & EASY ORDERING</small><h2>Cash on Delivery</h2><p>Send your order details directly to our WhatsApp for confirmation.</p></div>
-<form class="formbox" id="orderform">
- <h3>Order Details</h3>
- <div class="formrow">
-  <div><label for="customer">Full Name *</label><input class="field" id="customer" required placeholder="Your full name"></div>
-  <div><label for="phone">Phone Number *</label><input class="field" id="phone" type="tel" required placeholder="03XX XXXXXXX"></div>
- </div>
- <label for="shoe">Select Shoe *</label><select class="field" id="shoe" required><option value="">Choose a product</option></select>
- <div class="formrow">
-  <div><label for="size">Shoe Size *</label><input class="field" id="size" required placeholder="e.g. 8, 9, 42"></div>
-  <div><label for="qty">Quantity *</label><input class="field" id="qty" type="number" min="1" max="20" value="1" required></div>
- </div>
- <label for="address">Delivery Address *</label><textarea class="field" id="address" required placeholder="House, street, city"></textarea>
- <label for="payment">Payment Method</label><select class="field" id="payment"><option>Cash on Delivery (COD)</option></select>
- <button class="btn" type="submit">SEND ORDER ON WHATSAPP →</button>
- <p class="note">آپ کا آرڈر WhatsApp میں تیار ہوگا۔ پیغام بھیجنے کے بعد دکان سے اسٹاک، حتمی قیمت اور ڈیلیوری کی تصدیق لیں۔</p>
-</form>
+
+<section>
+
+<div class="feature reveal">
+
+<h2>
+Small Beginnings.<br>
+Big Dreams.
+</h2>
+
+<p>
+چھوٹے حالات کسی انسان کے خوابوں کو چھوٹا نہیں کرتے۔
+محنت، دعا اور مستقل مزاجی انسان کو ایک دن اپنی منزل تک پہنچا سکتی ہے۔
+</p>
+
+</div>
+
 </section>
 
-<section id="contact">
-<div class="heading"><small>LET'S CONNECT</small><h2>Follow AJ Shoes</h2><p>Connect with us on social media or contact us for orders.</p></div>
-<div class="socials">
- <a class="social fb" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
- <a class="social ig" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
- <a class="social yt" href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
- <a class="social tt" href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok">♪</a>
- <a class="social wa-icon" href="https://wa.me/923432752543" target="_blank" rel="noopener" aria-label="WhatsApp">☏</a>
+
+<section id="journey">
+
+<div class="section-title reveal">
+
+<small>JOURNEY</small>
+
+<h2>
+زندگی کے چند باب
+</h2>
+
 </div>
-<p class="note" style="text-align:center">سوشل میڈیا آئیکنز میں ابھی عمومی لنکس ہیں۔ اپنے اصل پیجز کے لنکس شامل کریں۔</p>
+
+
+<div class="timeline">
+
+<div class="item reveal">
+
+<div class="dot"></div>
+
+<h3>2011 — آغاز</h3>
+
+<p>
+شیخ یوسف کی زندگی کا آغاز 3 چک ڈلے والا سے ہوا۔
+</p>
+
+</div>
+
+
+<div class="item reveal">
+
+<div class="dot"></div>
+
+<h3>بچپن — سادگی</h3>
+
+<p>
+گھر، خاندان اور محدود وسائل کے درمیان ایک سادہ بچپن۔
+</p>
+
+</div>
+
+
+<div class="item reveal">
+
+<div class="dot"></div>
+
+<h3>ہنر — نیا راستہ</h3>
+
+<p>
+سلائی کے ہنر سے وابستگی اور محنت کے نئے راستے کی ابتدا۔
+</p>
+
+</div>
+
+
+<div class="item reveal">
+
+<div class="dot"></div>
+
+<h3>آج — تعلیم</h3>
+
+<p>
+ساتویں جماعت میں تعلیم اور مستقبل کے نئے خواب۔
+</p>
+
+</div>
+
+
+<div class="item reveal">
+
+<div class="dot"></div>
+
+<h3>کل — کامیابی</h3>
+
+<p>
+منزل ابھی آگے ہے، مگر سفر جاری ہے۔
+</p>
+
+</div>
+
+</div>
+
 </section>
+
+
+<section>
+
+<div class="section-title reveal">
+
+<small>A MESSAGE</small>
+
+<h2>
+یوسف کے نام
+</h2>
+
+</div>
+
+
+<div class="letter reveal">
+
+<h2>
+ایک بات جو شاید کبھی کہی نہیں گئی
+</h2>
+
+<p>
+شاید میں نے کبھی تمہیں کھل کر یہ نہیں بتایا کہ تم میرے لیے
+صرف ایک جاننے والے نہیں ہو۔
+</p>
+
+<p>
+وقت کے ساتھ دل میں تمہارے لیے ایک چھوٹے بھائی جیسی محبت
+اور عزت پیدا ہوئی۔
+</p>
+
+<p>
+میری دعا ہے کہ اللہ تمہیں زندگی میں بہت ترقی دے،
+کامیابی دے، خوش رکھے اور تمہارے خاندان کو ہمیشہ سلامت رکھے۔
+</p>
+
+<p>
+<strong>
+اللہ تمہیں ہمیشہ اپنی حفظ و امان میں رکھے۔ آمین۔
+</strong>
+</p>
+
+</div>
+
+</section>
+
+
+<section id="gallery">
+
+<div class="section-title reveal">
+
+<small>GALLERY</small>
+
+<h2>
+یادوں کے چند لمحے
+</h2>
+
+</div>
+
+
+<div class="gallery">
+
+<div class="gallery-box reveal">
+<img src="yousaf-8.jpg" alt="Yousaf">
+</div>
+
+<div class="gallery-box reveal">
+<img src="mudassir-5.jpg" alt="Mudassir">
+</div>
+
+<div class="gallery-box reveal">
+<img src="ustad-7.jpg" alt="Ustad">
+</div>
+
+</div>
+
+</section>
+
+
+<section class="dua">
+
+<div class="reveal">
+
+<h2>
+یوسف کے لیے دعا
+</h2>
+
+<p>
+یا اللہ! شیخ یوسف کو نیک، کامیاب، خوش اور محفوظ زندگی عطا فرما۔
+اس کے علم میں اضافہ فرما، اس کے راستے آسان فرما،
+اور اسے اور اس کے خاندان کو ہمیشہ خوشیاں عطا فرما۔
+آمین یا رب العالمین۔
+</p>
+
+</div>
+
+</section>
+
 
 <footer>
-<h2>AJ SHOES 👟</h2>
-<p>AQIB JAVED · PREMIUM FOOTWEAR</p>
-<p class="urdu" style="font-size:17px">آپ کا اعتماد، ہماری پہچان</p>
-<p>© <span id="year"></span> AJ Shoes Footwear. All Rights Reserved.</p>
+
+<div class="footer-logo">
+SHAIKH YOUSAF
+</div>
+
+<p>
+A story of simplicity • struggle • hope
+</p>
+
+<p>
+© 2026 Shaikh Yousaf
+</p>
+
 </footer>
-<a class="wa-float" href="https://wa.me/923432752543" target="_blank" rel="noopener">☏ WhatsApp</a>
+
 
 <script>
-const WHATSAPP="923432752543";
 
-const categories=[
- {id:"Men",name:"Men's Shoes",tag:"SMART & MODERN",img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80"},
- {id:"Ladies",name:"Ladies' Shoes",tag:"ELEGANT & CHIC",img:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80"},
- {id:"Kids",name:"Children's Shoes",tag:"LITTLE STEPS",img:"https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=700&q=80"},
- {id:"Sports",name:"Sports Shoes",tag:"MOVE WITH ENERGY",img:"https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=700&q=80"},
- {id:"Formal",name:"Formal Shoes",tag:"CLASSIC ELEGANCE",img:"https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=700&q=80"},
- {id:"Casual",name:"Casual Shoes",tag:"EVERYDAY STYLE",img:"https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=700&q=80"},
- {id:"Sandals",name:"Sandals & Slippers",tag:"LIGHT & RELAXED",img:"https://images.unsplash.com/photo-1603487742131-4160ec999306?auto=format&fit=crop&w=700&q=80"},
- {id:"Boots",name:"Boots",tag:"BOLD & DURABLE",img:"https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=700&q=80"},
- {id:"Sneakers",name:"Street Sneakers",tag:"URBAN LOOK",img:"https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=80"}
-];
+/* SCROLL ANIMATION */
 
-const items=[
-{name:"Classic Sport Runner",cat:"Men",price:2499,img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=650&q=80",desc:"Light sporty look with a casual silhouette.",use:"Walking, daily wear and relaxed outings."},
-{name:"Urban Casual Trainer",cat:"Men",price:2799,img:"https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=650&q=80",desc:"Versatile style for everyday outfits.",use:"Shopping, college and casual meetups."},
-{name:"Street Style Sneaker",cat:"Men",price:3199,img:"https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=650&q=80",desc:"Contemporary streetwear-inspired design.",use:"Weekend looks and everyday styling."},
+const revealElements =
+document.querySelectorAll(".reveal");
 
-{name:"Elegant Ladies Heels",cat:"Ladies",price:2999,img:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=650&q=80",desc:"Elegant silhouette for a polished look.",use:"Parties, dinners and special occasions."},
-{name:"Ladies Everyday Flats",cat:"Ladies",price:1899,img:"https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=650&q=80",desc:"Easy-to-style flat footwear.",use:"Daily errands, work and casual wear."},
-{name:"Ladies Chic Sneaker",cat:"Ladies",price:2599,img:"https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=650&q=80",desc:"Modern sporty style with a fresh look.",use:"Walking, shopping and casual outfits."},
-
-{name:"Kids Colour Sneakers",cat:"Kids",price:1599,img:"https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=650&q=80",desc:"Playful style for little feet.",use:"Playtime, family outings and everyday w
+const observer =
+new IntersectionObserver((entries
